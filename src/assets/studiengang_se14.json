@@ -1,0 +1,416 @@
+{
+  "name": "Elitestudiengang Master Software Engineering - 14. Jahrgang",
+  "semester": 4,
+  "minLP": 120,
+  "module": [
+    {
+      "id": 1,
+      "name": "Formale Methoden",
+      "minWahlLP": 6
+    },
+    {
+      "id": 2,
+      "name": "Software Engineering & Verteilte Systeme",
+      "minWahlLP": 6
+    },
+    {
+      "id": 3,
+      "name": "Datenbanken",
+      "minWahlLP": 0
+    },
+    {
+      "id": 4,
+      "name": "HCI",
+      "minWahlLP": 0
+    },
+    {
+      "id": 5,
+      "name": "Softskill-Kurse",
+      "minWahlLP": 10
+    }
+  ],
+  "veranstaltungstypen": [
+    {
+      "name": "Vorlesung",
+      "minBelegteVeranstaltungen": 0
+    },
+    {
+      "name": "Seminar",
+      "minBelegteVeranstaltungen": 1
+    },
+    {
+      "name": "Praktikum",
+      "minBelegteVeranstaltungen": 1
+    },
+    {
+      "name": "Masterarbeit",
+      "minBelegteVeranstaltungen": 1
+    }
+  ],
+  "veranstaltungen": [
+    {
+      "id": 101,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Formale Methoden",
+      "kuerzel": "FM",
+      "lp": 6,
+      "beschreibung": "Die Entwicklung beweisbar korrekter Software ist eines der wichtigsten Ziele des Software-Engineering. Für einen Korrektheitsnachweis sind einerseits die Anforderungen, gemäß deren sich die Software verhalten soll, formal zu spezifizieren und andererseits das Verhalten der Software in einem adäquaten semantischen Modell zu erfassen. Die Vorlesung legt die mathematischen Grundlagen für die Spezifikation und die Semantik von sequentiellen Programmen, stellt Beweismethoden und ihre Umsetzung in einem Theorembeweiser vor und gibt eine Einführung in die methodische Entwicklung korrekter sequentieller Programme.",
+      "schlagworte": [
+        "Aussagenlogik",
+        "Prädikatenlogik",
+        "Beweiskalküle",
+        "Induktion",
+        "algebraische Spezifikationen",
+        "operationale Semantik",
+        "Hoare-Logik",
+        "dynamische Logik",
+        "abstrakte Datentypen",
+        "Verfeinerung",
+        "Theorembeweiser"
+      ],
+      "links": [],
+      "Prof": "Alexander Knapp",
+      "Uni": "Augsburg",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 1
+    },
+    {
+      "id": 102,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Modellierung, Spezifikation und Verifikation",
+      "kuerzel": "MSV",
+      "lp": 6,
+      "beschreibung": "Reaktive Systeme verarbeiten Informationen unter Reaktion auf und in Interaktion mit einer Umgebung. Typische Vertreter sind Betriebssysteme und Software für Steuergeräte; häufig finden sich reaktive Systeme in sicherheitskritischen Bereichen, etwa medizinischen Anwendungen, Zahlungssystemen oder Zugangskontrollsystemen, in denen hohe Zuverlässigkeitsanforderungen gestellt werden. Die prägenden Eigenschaften reaktiver Systeme sind Nebenläufigkeit, Kommunikation und Nichtterminierung. Die Vorlesung stellt Ansätze zur Modellierung und Spezifikation reaktiver Systeme vor und gibt eine Einführung in Verfeinerungs- und Verifikationstechniken für zuverlässige, reaktive Systeme.",
+      "schlagworte": [
+        "Transitionssysteme",
+        "Sicherheits- und Lebendigkeitseigenschaften",
+        "strombasierte Spezifikationen",
+        "nebenläufige Termersetzungssysteme (z. B. Maude)",
+        "Prozeßalgebren (z. B. Calculus of Communicating Systems, Communicating Sequential Processes, pi-Kalkül)",
+        "Simulation und Bisimulation",
+        "Temporallogik",
+        "symbolisches Model checking",
+        "automatenbasiertes Model checking",
+        "Abstraktion",
+        "Verfeinerung"
+      ],
+      "links": [],
+      "Prof": "Alexander Knapp",
+      "Uni": "Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 2
+    },
+    {
+      "id": 103,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Modellbasierte Sicherheitsanalyse",
+      "kuerzel": "MSA",
+      "lp": 6,
+      "beschreibung": "Am 26 April 1986 wurde offensichtlich, wie kritisch eingebettete Systeme sein können. An diesem Tag kam es im Block 4 des Kernkraftwerks Tschernobyl zu einer unkontrollierten Kernschmelze. Folgen davon waren Tausende Tote, mehrere Hundert Quadratkilometer kontaminierten Bodens und radioaktiver Fallout in einem Großteil von Zentraleuropa. Das Ziel dieser Lehrveranstaltung ist es, in den State-of-the-art bei Sicherheitsanalysetechniken einzuführen. Diese Techniken zielen auf die Analyse sicherheitskritischer Systeme und liefern Designrichtlinien, um Systeme sicherer zu machen. Der Hauptfokus der Lehrveranstaltung liegt auf der ständig wachsenden Bedeutung von Software in kritischen, eingebetteten Systemen. Nur das korrekte Zusammenspiel zwischen der Hardware, der Steuerungssoftware und den Umgebungsbedingungen garantiert Sicherheit. Die Lehrveranstaltung gibt eine Einführung in traditionelle Ansätze in der Sicherheitsanalyse, ebenso wie in Leading-Edge-Techniken, die auf formalen Methoden basieren. Ebenfalls behandelt werden die Grundlagen von quantitativen und probabilistischen Bewertungsmethoden und die Notwendigkeiten einer Zertifizierung.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Wolfgang Reif",
+      "Uni": "Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 2
+    },
+    {
+      "id": 104,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Praktische IT-Sicherheit",
+      "kuerzel": "ITSEC",
+      "lp": 3,
+      "beschreibung": "Diese Vorlesung gibt eine Einführung in grundlegende Konzepte, Techniken, Methoden und Anwendungen der IT-Sicherheit. Die Vorlesung behandelt dabei folgende Themen: Die wichtigsten Bedrohungen und Angriffe, Grundbegriffe der IT-Sicherheit und Ziele der Disziplin wie Integrität, Vertraulichkeit, Verfügbarkeit und Authentizität. onzepte der Kryptographie sowie ausgewählte kryptographische Verschlüsselungs-, Signier- und Hashverfahren. Zugriffskontrollsysteme, das heißt, Mechanismen um den Zugriff auf sensible Daten zu überwachen und zu kontrollieren. onzepte und Verfahren der Authentifikation (d.h. der Überprüfung einer behaupteten Identität). Dabei werden insbesondere Herausforderungen der aktuellen biometrischen Technologien diskutiert. Techniken (TLS, IPSEC) und Technologien (VPN, Firewalls) der Netzwerksicherheit. Security Engineering, das heißt, die systematische Vorgehensweise zur Konstruktion sicherer IT-Systeme, sowie dabei eingesetzte Methoden, werden vorgestellt. Darüber hinaus werden die dabei zu berücksichtigen rechtliche Aspekte angesprochen.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 3
+    },
+    {
+      "id": 105,
+      "typ": "Seminar",
+      "titel": "Seminar Formale Methoden und IT-Sicherheit",
+      "kuerzel": "SemFM",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet Formale Methoden und IT-Sicherheit selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 3
+    },
+
+    {
+      "id": 301,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Datenbanksysteme",
+      "kuerzel": "DBS1",
+      "lp": 6,
+      "beschreibung": "Die Vorlesung vermittelt Kenntnisse die zum Entwurf und Betrieb von Datenbanksystemen benötigt werden. Behandelt wird das relationale Datenmodell das modernen Datenbanken zu Grunde liegt, Modellierung- und Entwurfstechniken für das Datenbankdesign und relationale Anfragesprachen, sowie deren Grundlage, die relationale Algebra. Außerdem behandelt wird die Anbindung von Datenbanken an moderne Programmiersprachen wie JAVA und Datenbankerweiterungen welche die Verarbeitung von XML Daten oder objektorientierte Datenmodelle unterstützen. Weiterer Inhalt der Vorlesung sind die Technologien, die bei der Implementierung von Datenbanksystemen eingesetzt werden, z.B. zur Anfragebearbeitung, Transaktionsverwaltung, Mehrbenutzersynchronisation, Fehlerbehandlung, etc.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Alfons Kemper",
+      "Uni": "TUM",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Datenbanken"
+      },
+      "semester": 1
+    },
+    {
+      "id": 302,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Datenbanksysteme und moderne CPU-Architekturen",
+      "kuerzel": "DB-IMPL",
+      "lp": 6,
+      "beschreibung": "Understand the interaction between database systems resp. algorithms and modern computer architecture (esp. CPU, Cache, Primary Storage) and learn how to develop resp. to modify the internals of database systems in order to make use of the properties of these computer architecture features.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "TUM",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Datenbanken"
+      },
+      "semester": 2
+    },
+    {
+      "id": 303,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Web-Datenbanken",
+      "kuerzel": "Web-DBS",
+      "lp": 5,
+      "beschreibung": "In vielen aktuellen Einsatzgebieten sind Datenbanken über Web-basierte Schnittstellen für Benutzer zugänglich, sei es beim Einkauf bei einem Internethändler, bei der Kundenbetreuung, beim Online-Banking, etc. Die große Zahl an gleichzeitigen Benutzern und die Verteilung der Anwendungen auf mehrere verschiedene Hard- und Softwaresysteme wie Web-Server, Datenbank-Server, Application-Server, etc haben zur Entwicklung spezieller Softwarearchitekturen und Entwicklungsparadigmen geführt. Die Vorlesung behandelt aktuelle Programmiersprachen, Technologien und Architekturen für moderne Web-basierte Informationssysteme. Diese Veranstaltung soll neben den theoretischen Grundlagen auch praktische Erfahrung beim Umgang mit den relevanten Technologien vermitteln. Aufgabe der Studenten ist deshalb neben dem Erlernen der theoretischen Grundlagen auch der Entwurf und die Implementierung einer modernen Web-basierten Datenbankanwendung.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "TUM",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Datenbanken"
+      },
+      "semester": 3
+    },
+    {
+      "id": 304,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Grundlagen Data Engineering",
+      "kuerzel": "DE",
+      "lp": 6,
+      "beschreibung": "Die Veranstaltung behandelt grundlegende Techniken zur Organisation und effizienten Analyse (sehr) großer Datenmengen. Dazu werden Verfahren der verteilten Datenhaltung in Abhängigkeit von der Systemarchitektur (z.B. Mehrkernsysteme, Multiprozessorsysteme, Cluster), verteilte und parallele Datenanalyse, Statistik-gestützte Optimierung von Analyseprozessen, map/reduce Techniken und ihre Verallgemeinerung zur verteilten Anfrageverarbeitung vorgestellt. Darüber hinaus werden Anwendungen in Systemen wie Hadoop und in NoSQL Systemen, die gesellschaftlichen Auswirkungen der Datenanalyse und die Bedeutung des Datenschutzes thematisiert.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "TUM",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Datenbanken"
+      },
+      "semester": 3
+    },
+    {
+      "id": 305,
+      "typ": "Seminar",
+      "titel": "Seminar Datenbanken",
+      "kuerzel": "SemDB",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet der Datenbanken selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Datenbanken"
+      },
+      "semester": 3
+    },
+
+    {
+      "id": 201,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Software Engineering",
+      "kuerzel": "SE",
+      "lp": 6,
+      "beschreibung": "Die Vorlesung gibt einen Überblick über Methoden zur systematischen Entwicklung von Software. Ausgehend von einer Diskussion des Softwarelebenszyklus behandelt die Vorlesung insbesondere die Phasen der Softwareentwicklung: Analyse, Spezifikation, Design, Implementierung, Wartung. Diese spiegeln sich in den behandelten Softwareprozessen wieder, von denen der Unified Process den größten Raum einnimmt. In Analyse und Design sind Modularisierung, Abstraktion und Objekt-Orientierung wesentliche Themen, ebenso wie der Einsatz der UML. Ein weiteres wichtiges Thema sind Design Patterns. Aus der Implementierungsphase wird insbesondere die Qualitätssicherung durch Testen und Reviews thematisiert.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Wolfgang Reif",
+      "Uni": "Uni Augsburg",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 1
+    },
+    {
+      "id": 202,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Projektmanagement",
+      "kuerzel": "PM",
+      "lp": 6,
+      "beschreibung": "Der Erfolg eines Softwareentwicklungsprojekts hängt wesentlich von der Güte des Projektmanagements ab. Wesentliche Ziele des Projektmanagements bestehen darin, die Produktivität zu erhöhen, die Qualität sicherzustellen und vorgegebene Kosten- und Zeitrahmen einzuhalten. In dieser Vorlesung werden die wesentlichen Aufgaben, Prozesse, Methoden und Werkzeuge des Projektmanagement vorgestellt und an praktischen Beispielen eingeübt.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Martin Wirsing",
+      "Uni": "LMU",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 1
+    },
+    {
+      "id": 203,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Software Engineering für Embedded Systems",
+      "kuerzel": "SE-ES",
+      "lp": 6,
+      "beschreibung": "Eingebettete Systeme sind für einen spezifischen Zweck in einer technischen Umgebung entworfene, eingebaute und betriebene informationsverarbeitende Systeme, wie sie etwa in Automobilen, Flugzeugen, Haushaltsgeräten, Unterhaltungselektronik oder Mobilfunkgeräten zu finden sind. Prägende Merkmale sind die Umgebungskommunikation durch Sensoren und Aktuatoren und Realzeitabhängigkeiten. Die Vorlesung gibt einen Überblick in den Entwurf, die Implementierung und das technische Umfeld eingebetteter Systeme.",
+      "schlagworte": [
+        "synchrone und asynchrone Modellierung",
+        "Spezifikationssprachen (z. B. Statecharts, Esterel, VHDL, SystemC, Giotto)",
+        "gezeitete Automaten",
+        "hybride Automaten",
+        "eingebettete Hardware",
+        "Sensoren",
+        "Aktuatoren",
+        "Application-Specific Circuits",
+        "eingebettete Betriebssysteme",
+        "Scheduling",
+        "Middleware",
+        "Hardware/Software Co-Design"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 3
+    },
+    {
+      "id": 204,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Software Engineering für Embedded Systems",
+      "kuerzel": "SE-ES",
+      "lp": 6,
+      "beschreibung": "Eingebettete Systeme sind für einen spezifischen Zweck in einer technischen Umgebung entworfene, eingebaute und betriebene informationsverarbeitende Systeme, wie sie etwa in Automobilen, Flugzeugen, Haushaltsgeräten, Unterhaltungselektronik oder Mobilfunkgeräten zu finden sind. Prägende Merkmale sind die Umgebungskommunikation durch Sensoren und Aktuatoren und Realzeitabhängigkeiten. Die Vorlesung gibt einen Überblick in den Entwurf, die Implementierung und das technische Umfeld eingebetteter Systeme.",
+      "schlagworte": [
+        "synchrone und asynchrone Modellierung",
+        "Spezifikationssprachen (z. B. Statecharts, Esterel, VHDL, SystemC, Giotto)",
+        "gezeitete Automaten",
+        "hybride Automaten",
+        "eingebettete Hardware",
+        "Sensoren",
+        "Aktuatoren",
+        "Application-Specific Circuits",
+        "eingebettete Betriebssysteme",
+        "Scheduling",
+        "Middleware",
+        "Hardware/Software Co-Design"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 3
+    }
+  ]
+}

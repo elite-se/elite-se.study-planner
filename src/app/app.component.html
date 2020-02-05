@@ -1,0 +1,30 @@
+<div id="main-container">
+  <div id="veranstaltungen">
+    <app-modul-veranstaltungen
+      *ngFor="let m of module"
+      [modul]="m"
+    ></app-modul-veranstaltungen>
+  </div>
+
+  <div id="right">
+    <div id="semesterplanung">
+      <app-semester-swim-lane
+        *ngFor="let semNr of semester"
+        [semesterNr]="semNr"
+      ></app-semester-swim-lane>
+    </div>
+
+    <div id="rulecheckers">
+      <h4 class="rules-header {{ allRegelnCheck ? 'success' : 'error' }}">
+        Anforderungen
+        <span class="down-btn" (click)="toggleRegelnHidden()">>></span>
+      </h4>
+      <div class="rules-container {{ regelnHidden ? 'hidden' : '' }} ">
+        <app-rule-checker
+          *ngFor="let regel of regeln"
+          [regel]="regel"
+        ></app-rule-checker>
+      </div>
+    </div>
+  </div>
+</div>

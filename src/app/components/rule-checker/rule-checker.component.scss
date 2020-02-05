@@ -1,0 +1,9 @@
+.rule-checker {
+  &.error {
+    color: var(--warning-color);
+  }
+
+  &.success {
+    color: var(--success-color);
+  }
+}

@@ -1,0 +1,34 @@
+<div class="veranstaltungs-card {{ isMini ? 'mini' : '' }}">
+  <div class="head-region">
+    <span
+      *ngIf="!isMini"
+      class="kuerzel text-modul-{{ veranstaltung.modul | modulCssClass }}"
+      >{{ veranstaltung.kuerzel }}</span
+    >
+
+    <div
+      class="delete-btn"
+      *ngIf="!veranstaltung.isPflicht && !isMini"
+      (click)="onXClicked()"
+    >
+      X
+    </div>
+    <div class="title-container">
+      <h3 class="title">{{ veranstaltung.titel }}</h3>
+      <p class="prof" *ngIf="!isMini">
+        {{ veranstaltung.Prof }}
+      </p>
+    </div>
+    <div style="flex-grow: 1;"></div>
+    <h4 class="lp">{{ veranstaltung.lp }} LP</h4>
+  </div>
+  <div class="details-container" *ngIf="!isMini">
+    <p>Uni: {{ veranstaltung.Uni }}</p>
+    <div style="flex-grow: 1;"></div>
+    <span class="more-link">Details...</span>
+  </div>
+
+  <div *ngIf="veranstaltung.isPflicht && !isMini" class="pflicht-balken">
+    Pflicht
+  </div>
+</div>

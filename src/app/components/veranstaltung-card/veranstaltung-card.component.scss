@@ -1,0 +1,100 @@
+.veranstaltungs-card {
+  position: relative;
+  width: 320px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  color: rgb(90, 90, 90);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.35);
+
+  .head-region {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 32px 12px 6px 12px;
+    border-bottom: 1px solid rgb(209, 217, 224);
+  }
+
+  &.mini {
+    width: 100%;
+
+    .head-region {
+      padding: 4px 8px;
+      border: none;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .lp {
+      z-index: 10;
+      padding: 0px;
+      background: none;
+      color: var(--lp-background);
+    }
+  }
+
+  .kuerzel {
+    font-weight: 500;
+    font-size: 64px;
+    opacity: 0.18;
+    position: absolute;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    top: -4px;
+    left: 4px;
+  }
+  .delete-btn {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    margin-bottom: 6px;
+    padding-right: 4px;
+    align-self: flex-end;
+    color: rgba(255, 0, 0, 0.5);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .title-container {
+    z-index: 10;
+  }
+  .lp {
+    z-index: 10;
+    padding: 8px 12px;
+    background: var(--lp-background);
+    color: white;
+    border-radius: 500px;
+    min-width: 34px;
+  }
+
+  .details-container {
+    padding: 6px 12px;
+    font-weight: 300;
+    display: flex;
+
+    .more-link {
+      color: rgb(160, 160, 160);
+      text-decoration: underline;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .pflicht-balken {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    background: var(--pflicht-color);
+    color: white;
+    padding: 6px;
+    border-radius: 0 0 5px 5px;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="modul-container border-modul-{{ _modul | modulCssClass }}">
+  <h5 class="title text-modul-{{ _modul | modulCssClass }}">
+    {{ _modul.name }}
+  </h5>
+
+  <app-veranstaltung-card
+    *ngFor="let v of modulVeranstaltungen"
+    [veranstaltung]="v"
+    [isMini]="true"
+    (click)="handleClick(v)"
+  ></app-veranstaltung-card>
+</div>

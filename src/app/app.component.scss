@@ -1,0 +1,107 @@
+#main-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+#veranstaltungen {
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 12px;
+  width: 22%;
+  min-width: 320px;
+  border-right: 1px solid rgb(120, 120, 120);
+  background: linear-gradient(
+    30deg,
+    rgba(70, 74, 80, 1) 0%,
+    rgba(59, 76, 85, 1) 100%
+  );
+
+  app-modul-veranstaltungen {
+    display: block;
+    margin-bottom: 12px;
+  }
+}
+
+#right {
+  height: 100%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 12px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-left: 1px solid rgb(216, 216, 216);
+  background: linear-gradient(
+    30deg,
+    rgba(222, 222, 222, 1) 0%,
+    rgba(199, 211, 218, 1) 100%
+  );
+
+  #semesterplanung {
+    flex-grow: 1;
+    overflow-y: auto;
+
+    app-semester-swim-lane {
+      display: block;
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #rulecheckers {
+    box-sizing: border-box;
+    margin-top: 12px;
+    background: white;
+    width: 100%;
+    border-radius: 5px;
+
+    .rules-header {
+      position: relative;
+      padding: 6px;
+      margin: 0;
+      border-radius: 5px 5px 0 0;
+      font-weight: 500;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.8);
+      width: 100%;
+      box-sizing: border-box;
+
+      &.error {
+        background: var(--warning-color);
+      }
+
+      &.success {
+        background: var(--success-color);
+      }
+
+      .down-btn {
+        display: block;
+        position: absolute;
+        right: 6px;
+        top: 6px;
+        transform: rotate(90deg);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .rules-container {
+      padding: 12px;
+      overflow-y: hidden;
+      transition: height 0.3s ease-out;
+
+      &.hidden {
+        height: 0px;
+        padding: 0;
+      }
+    }
+  }
+}

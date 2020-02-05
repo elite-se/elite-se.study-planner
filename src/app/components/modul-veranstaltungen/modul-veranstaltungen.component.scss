@@ -1,0 +1,22 @@
+.modul-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  background: white;
+
+  .title {
+    margin-bottom: 8px;
+  }
+
+  app-veranstaltung-card {
+    display: block;
+    margin-bottom: 6px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

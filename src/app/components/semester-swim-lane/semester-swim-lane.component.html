@@ -1,0 +1,10 @@
+<div class="semester-swim-lane">
+  <h4 class="semester-nr">Semester {{ _semesterNr }}</h4>
+  <div class="veranstaltungs-container">
+    <app-veranstaltung-card
+      *ngFor="let veranstaltung of veranstaltungenInSemester"
+      [veranstaltung]="veranstaltung"
+      (delete)="onDeleteVeranstaltung(veranstaltung)"
+    ></app-veranstaltung-card>
+  </div>
+</div>

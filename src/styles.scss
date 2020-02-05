@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+
+  --modul-color-01: rgb(247, 162, 36);
+  --modul-color-02: rgb(49, 108, 196);
+  --modul-color-03: rgb(62, 168, 97);
+  --modul-color-04: rgb(163, 68, 218);
+  --modul-color-05: rgb(189, 67, 58);
+
+  --pflicht-color: #57585aea;
+  --warning-color: rgba(255, 69, 36, 0.9);
+  --success-color: rgba(86, 204, 96, 0.9);
+  --lp-background: rgb(83, 112, 155);
+}
+
+.text-modul-01 {
+  color: var(--modul-color-01);
+}
+.border-modul-01 {
+  border-color: var(--modul-color-01);
+}
+
+.text-modul-02 {
+  color: var(--modul-color-02);
+}
+.border-modul-02 {
+  border-color: var(--modul-color-02);
+}
+
+.text-modul-03 {
+  color: var(--modul-color-03);
+}
+.border-modul-03 {
+  border-color: var(--modul-color-03);
+}
+
+.text-modul-04 {
+  color: var(--modul-color-04);
+}
+.border-modul-04 {
+  border-color: var(--modul-color-04);
+}
+
+.text-modul-05 {
+  color: var(--modul-color-05);
+}
+.border-modul-05 {
+  border-color: var(--modul-color-05);
+}
