@@ -31,7 +31,7 @@ export class AppComponent {
 
   allRegelnCheck: boolean = false;
 
-  regelnHidden: boolean = false;
+  regelnHidden: boolean = true;
 
   constructor(
     private studiengangService: StudiengangService,

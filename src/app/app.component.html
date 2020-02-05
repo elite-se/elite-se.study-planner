@@ -16,7 +16,7 @@
 
     <div id="rulecheckers">
       <h4 class="rules-header {{ allRegelnCheck ? 'success' : 'error' }}">
-        Anforderungen
+        Anforderungen {{ allRegelnCheck ? "erfüllt" : "nicht erfüllt" }}
         <span class="down-btn" (click)="toggleRegelnHidden()">>></span>
       </h4>
       <div class="rules-container {{ regelnHidden ? 'hidden' : '' }} ">
