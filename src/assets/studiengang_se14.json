@@ -162,7 +162,32 @@
     },
     {
       "id": 105,
-      "typ": "Seminar",
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Semantik von Programmiersprachen",
+      "kuerzel": "SvP",
+      "lp": 5,
+      "beschreibung": "Es werden drei klassische Ansätze zur Semantik von Programmiersprachen besprochen: In der operationalen Semantik wird die Bedeutung eines programmiersprachlichen Konstrukts dadurch festgelegt, wie es auszuführen ist und zu welchen Effekten es führt. In der denotationellen Semantik wird von der spezifischen Ausführungsart abstrahiert und lediglich der Effekt eines Konstrukts betrachtet. Schließlich wird im axiomatischen Ansatz der Effekt eines Konstrukts durch Zusicherungen spezifiziert. Als Beispielsprache für die unterschiedlichen semantischen Ansätze dient eine einfache, imperative WHILE-Sprache, die im Verlauf der Vorlesung um syntaktische Konstrukte erweitert wird.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 3
+    },
+    {
+      "id": 106,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
       "titel": "Seminar Formale Methoden und IT-Sicherheit",
       "kuerzel": "SemFM",
       "lp": 4,
@@ -348,37 +373,97 @@
         "name": "Vorlesung",
         "minBelegteVeranstaltungen": 0
       },
-      "titel": "Software Engineering für Embedded Systems",
-      "kuerzel": "SE-ES",
-      "lp": 6,
-      "beschreibung": "Eingebettete Systeme sind für einen spezifischen Zweck in einer technischen Umgebung entworfene, eingebaute und betriebene informationsverarbeitende Systeme, wie sie etwa in Automobilen, Flugzeugen, Haushaltsgeräten, Unterhaltungselektronik oder Mobilfunkgeräten zu finden sind. Prägende Merkmale sind die Umgebungskommunikation durch Sensoren und Aktuatoren und Realzeitabhängigkeiten. Die Vorlesung gibt einen Überblick in den Entwurf, die Implementierung und das technische Umfeld eingebetteter Systeme.",
+      "titel": "Testen",
+      "kuerzel": "TEST",
+      "lp": 5,
+      "beschreibung": "Testen dient der Bewertung und Verbesserung der Produktqualität durch die Identifikation von Mängeln und Problemen. Der Softwaretest konzentriert sich dabei auf die dynamische Überprüfung des Softwareverhaltens gegenüber einem erwarteten Verhalten basierend auf einer endlichen Menge von Testfällen, die geeignet aus dem im allgemeinen unendlichen Ablaufraum der Software auszuwählen sind. Die Vorlesung stellt die Grundlagen des Softwaretests vor, erläutert die Einbindung des Softwaretests in den Softwareentwicklungsprozeß und beschreibt und diskutiert Testmethoden und -werkzeuge sowie Verfahren des Testmanagements.",
       "schlagworte": [
-        "synchrone und asynchrone Modellierung",
-        "Spezifikationssprachen (z. B. Statecharts, Esterel, VHDL, SystemC, Giotto)",
-        "gezeitete Automaten",
-        "hybride Automaten",
-        "eingebettete Hardware",
-        "Sensoren",
-        "Aktuatoren",
-        "Application-Specific Circuits",
-        "eingebettete Betriebssysteme",
-        "Scheduling",
-        "Middleware",
-        "Hardware/Software Co-Design"
+        "Software-Qualität",
+        "Testprozeß",
+        "funktionales Testen",
+        "strukturelles Testen",
+        "diversifizierendes Testen",
+        "modellbasiertes Testen",
+        "Testen eingebetteter Software (Konformanztesten)",
+        "Testen objektorientierter Software",
+        "Integrationstest",
+        "Testausführung"
+      ],
+      "links": [],
+      "Prof": "Alexander Knapp",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 2
+    },
+    {
+      "id": 204,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Requirements Engineering",
+      "kuerzel": "RE",
+      "lp": 6,
+      "beschreibung": "Requirements Engineering (RE) ist eine entscheidende Aufgabe/Phase jedes Entwicklungsprojektes. Hierbei zu erarbeitende Anforderungs- und Systemspezifikationen sind Grundlage für die weitere Entwicklung, Integration und Abnahme des zu entwickelnden Systems. Sie bilden die Abstimmungs- und Vertragsgrundlage für alle Projektbeteiligten (Kunden, Nutzer, Entwickler u.a.) und sind Ausgangspunkt für Aufwandschätzung und Planung des Projektes. Die Vorlesung beginnt mit einer Einführung in die Ziele, Aufgaben und Inhalte des Requirements Engineering. Nach einem Überblick über Anforderungsarten, wesentliche Prozessschritte, Methoden und Techniken der Anforderungsentwicklung und Spezifikation werden folgende Themen des RE vertiefend behandelt: Anforderungserhebung und ihre strukturierte Dokumentation, Use Case/Szenario-Modellierung, Nicht-funktionale Anforderungen, Requirements Management, Systemmodelle in RE und Nutzerschnittstellen. Diese Themen und ihre RE-Techniken werden anhand von Fallstudien aus Forschung und industrieller Praxis vermittelt und in praktischen Übungen vertiefend bearbeitet.",
+      "schlagworte": [
+        "Software-Qualität",
+        "Testprozeß",
+        "funktionales Testen",
+        "strukturelles Testen",
+        "diversifizierendes Testen",
+        "modellbasiertes Testen",
+        "Testen eingebetteter Software (Konformanztesten)",
+        "Testen objektorientierter Software",
+        "Integrationstest",
+        "Testausführung"
       ],
       "links": [],
       "Prof": "n.a.",
       "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 2
+    },
+    {
+      "id": 205,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Modellbasierte Softwareentwicklung",
+      "kuerzel": "MSE",
+      "lp": 5,
+      "beschreibung": "Die modellgetriebene Softwareentwicklung setzt sich das Ziel, Softwaresysteme möglichst weitgehend durch (semi-)formale Modelle zu beschreiben und aus diesen Modellen möglichst viele Artefakte von Softwaresystemen generativ ableiten zu können. In diese Vorgehensweise reihen sich der 'Model-Driven Architecture'-Ansatz der OMG, der 'Software Factory'-Ansatz von Microsoft, Modellinterpreter wie die 'Executable UML' und genereller die Verwendung von 'Domain-Specific Languages' und das generative Programmieren ein. Die Vorlesung gibt einen Überblick über das Gebiet der modellgetriebenen Softwareentwicklung anhand der Themenschwerpunkte: Modellierung, Metamodellierung, Transformationen und Codegenerierung.",
+      "schlagworte": [
+        "Modellgetriebene Entwicklungsansätze (z. B. Model-Driven Architecture)",
+        "Modellierungssprachen (z. B. Unified Modeling Language, Object Constraint Language)",
+        "Metamodellierung (z. B. Meta-Object Facility, Eclipse Modeling Framework)",
+        "Modellaustausch (z. B. XML Metadata Interchange)",
+        "Model-to-Model- und Model-to-Text-Transformationen (z. B. Query/View/Transformation, Graphtransformationen, Java Emitter Templates, xPand)",
+        "Modelltransformationswerkzeuge (z. B. openArchitectureWare, AndroMDA)"
+      ],
+      "links": [],
+      "Prof": "Alexander Knapp",
+      "Uni": "Augsburg",
       "isPflicht": false,
       "isBlock": false,
       "modul": {
         "id": 2,
         "name": "Software Engineering & Verteilte Systeme"
       },
-      "semester": 3
+      "semester": 2
     },
     {
-      "id": 204,
+      "id": 206,
       "typ": {
         "name": "Vorlesung",
         "minBelegteVeranstaltungen": 0
@@ -411,6 +496,117 @@
         "name": "Software Engineering & Verteilte Systeme"
       },
       "semester": 3
+    },
+    {
+      "id": 207,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Software Engineering für Verteilte Systeme",
+      "kuerzel": "SE-VS",
+      "lp": 6,
+      "beschreibung": "Diese Veranstaltung beschäftigt sich mit Softwarearchitekturen verteilter System, mit semantischen Techniken und mit Multi-Agenten-Systemen.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 3
+    },
+    {
+      "id": 208,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Künstliche Intelligenz",
+      "kuerzel": "KI",
+      "lp": 5,
+      "beschreibung": "Die Vorlesung grenzt zunächst die (klassische) künstliche Intelligenz von Verfahren des maschinellen Lernens ab und erläutert ihre Rolle in industriellen Anwendungen (Industrie 4.0, Smart Factory, Smart Grids). Es wird auf unterschiedliche Methoden und Modelle wie Entscheidungsbäume und wälder, Ensemble-Methoden, Regression, numerische, kontinuierliche Optimierung (Gradientenverfahren, SGD, ADAM) auch unter Nebenbedingungen, probabilistische Modelle, Gauss-Prozesse, aktives Lernen, neuronale Netze, Faltungsnetze (CNN) und rekurrente neuronale Netze eingegangen. Darüber hinaus werden Themen des Natural Language Processing bzw. Verarbeitung von diskreten Daten diskutiert.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 3
+    },
+    {
+      "id": 208,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Projektseminar Softwaretechnik",
+      "kuerzel": "PULI",
+      "lp": 4,
+      "beschreibung": "Jeder Studierende des Elitestudiengangs sollte während seines Studiums an einem Spezialprojekt („Pushing-the-limits-Projekt“) teilnehmen. Beispiele für solche Projekte der bisherigen Jahrgänge sind XENAKIS (http://xenakis.3-n.de/), Sightplayer, Monopedia und CATS. Die Projekte gehen dabei immer auf studentische Initiativen und Ideen zurück. Es gibt damit für die Studierenden die Möglichkeit ein interessantes und herausforderndes Projekt in Form einer Lehrveranstaltung zu bearbeiten. Die Spezialprojekte beginnen im 2. Semester (Ideenfindung und Konzeption) und dauern bis in das 3. Semester. Die Pushing-the-limits-Projekte werden als Seminare abgerechnet, womit auch der Forderung der Prüfungsordnung genüge getan ist, genau ein Seminar zu absolvieren.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 3
+    },
+
+    {
+      "id": 901,
+      "typ": {
+        "name": "Praktikum",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Industriepraktikum",
+      "kuerzel": "IP",
+      "lp": 10,
+      "beschreibung": "Der Studiengang verlangt die Ableistung eines Industriepraktikums von mindestens 8 Wochen Dauer (Vollzeit). Das Industriepraktikum sollte bei einem der Industriepartner des Studiengangs absolviert werden, wofür die Partnerunternehmen geeignete Angebote machen. Das Praktikum zählt 10 LP. Vorbereitung und Anmeldung: Mit der Planung des Praktikums, das in der vorlesungsfreien Zeit zwischen zweitem und drittem Semester stattfindet, sollte zu Beginn des zweiten Semesters begonnen werden. Alle Studierenden erhalten vom Koordinator des Studiengangs Informationen zu den Praktikumsangeboten der Partnerunternehmen. Die Bewerbung für die Praktikumsplätze und die Auswahl der Praktikanten durch die Firmenpartner erfolgt im Sommersemester. Praktika müssen mit dem Studiengang abgestimmt werden und mit den Leitlinien konform sein. Insbesondere sollten die Praktika zum Vorlesungsbeginn des Wintersemesters beendet sein.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Unternehmen nach Wahl",
+      "Uni": "--",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 9,
+        "name": "Sonstiges"
+      },
+      "semester": 2
+    },
+    {
+      "id": 902,
+      "typ": {
+        "name": "Masterarbeit",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Masterarbeit",
+      "kuerzel": "MSC",
+      "lp": 30,
+      "beschreibung": "Die Masterarbeit wird im Allgemeinen im vierten Semester erstellt und sie ist mit 30 LP bewertet. Die Masterarbeit kann an einem der beteiligten Lehrstühle oder bei einem Firmenpartner des Elitestudiengangs erstellt werden. Die Erstellung der Masterarbeit bietet die Möglichkeit zu einem Auslandsaufenthalt. Vorbereitung und Anmeldung: Zur Vorbereitung der Masterarbeit sollte bis spätestens Mitte des dritten Semesters Kontakt mit dem Koordinator des Studiengangs hergestellt werden, damit mit der Vorbereitung begonnen werden kann. Für einen Auslandsaufenthalt in Japan im Rahmen der Kooperation des Elitestudiengangs mit dem National Institute of Informatics (NII) in Tokio ist eine Bewerbung bereits im 2. Semester (Sommersemester) erforderlich. Bei Interesse wenden Sie sich frühzeitig im 2. Semester an den Koordinator.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Prof. nach Wahl",
+      "Uni": "nach Wahl",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 9,
+        "name": "Sonstiges"
+      },
+      "semester": 4
     }
   ]
 }
