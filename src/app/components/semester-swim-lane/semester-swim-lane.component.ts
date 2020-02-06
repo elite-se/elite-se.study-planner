@@ -41,4 +41,18 @@ export class SemesterSwimLaneComponent implements OnInit {
   onDeleteVeranstaltung(v: Veranstaltung) {
     this.belegungService.removeVeranstaltungFromBelegung(v);
   }
+
+  getVeranstaltungsCardWidthCssClass(veranstaltung: Veranstaltung): string {
+    if (!veranstaltung) return "";
+
+    let cssClass = "size-";
+    if (veranstaltung.lp >= 20) {
+      cssClass += "full-row";
+    } else if (veranstaltung.lp >= 10) {
+      cssClass += "big";
+    } else {
+      cssClass += veranstaltung.lp;
+    }
+    return cssClass;
+  }
 }

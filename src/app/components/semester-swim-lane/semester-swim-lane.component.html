@@ -5,6 +5,7 @@
       *ngFor="let veranstaltung of veranstaltungenInSemester"
       [veranstaltung]="veranstaltung"
       (delete)="onDeleteVeranstaltung(veranstaltung)"
+      class="{{ getVeranstaltungsCardWidthCssClass(veranstaltung) }}"
     ></app-veranstaltung-card>
   </div>
 </div>

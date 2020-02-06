@@ -21,12 +21,43 @@
   .veranstaltungs-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 12px;
-    padding-bottom: 0px; //taken care of by the cards' bottom margin
+    padding: 12px 0 0 12px;
 
     app-veranstaltung-card {
       margin-right: 12px;
       margin-bottom: 12px;
+
+      --v-card-minwidth: 260px;
+      --width-per-lp: 30px;
+
+      min-width: val(--v-card-minwidth);
+
+      &.size-4 {
+        width: calc(var(--v-card-minwidth) + 1 * var(--width-per-lp));
+      }
+
+      &.size-5 {
+        width: calc(var(--v-card-minwidth) + 2 * var(--width-per-lp));
+      }
+
+      &.size-6 {
+        width: calc(var(--v-card-minwidth) + 3 * var(--width-per-lp));
+      }
+
+      &.size-7,
+      &.size-8,
+      &.size-9,
+      &.size-10 {
+        width: calc(var(--v-card-minwidth) + 5 * var(--width-per-lp));
+      }
+
+      &.size-big {
+        width: calc(var(--v-card-minwidth) + 10 * var(--width-per-lp));
+      }
+
+      &.size-full-row {
+        flex-grow: 1;
+      }
     }
   }
 }
