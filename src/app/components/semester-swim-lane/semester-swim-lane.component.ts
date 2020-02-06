@@ -20,6 +20,13 @@ export class SemesterSwimLaneComponent implements OnInit {
   }
 
   veranstaltungenInSemester: Veranstaltung[];
+  get lpsInSemester(): string {
+    return (
+      this.veranstaltungenInSemester.reduce((acc, v) => {
+        return acc + v.lp;
+      }, 0) + " LP"
+    );
+  }
 
   constructor(private belegungService: BelegungService) {}
 

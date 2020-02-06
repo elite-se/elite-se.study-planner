@@ -1,5 +1,12 @@
 <div class="semester-swim-lane">
-  <h4 class="semester-nr">Semester {{ _semesterNr }}</h4>
+  <div class="swim-lane-header">
+    <h4 class="semester-nr">Semester {{ _semesterNr }}</h4>
+    <div class="lp-counter">
+      <p class="invisible-text-for-width-only">{{ lpsInSemester }}</p>
+      <p class="text">{{ lpsInSemester }}</p>
+    </div>
+  </div>
+
   <div class="veranstaltungs-container">
     <app-veranstaltung-card
       *ngFor="let veranstaltung of veranstaltungenInSemester"

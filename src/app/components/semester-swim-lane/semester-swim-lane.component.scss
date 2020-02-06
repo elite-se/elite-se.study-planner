@@ -6,16 +6,44 @@
   border-radius: 6px;
   min-height: 120px;
 
-  .semester-nr {
+  .swim-lane-header {
+    position: relative;
     padding: 6px;
     margin: 0;
-    border-radius: 5px 5px 0 0;
-    font-weight: 500;
     text-align: center;
+    border-radius: 5px 5px 0 0;
     background: rgb(153, 156, 161);
     color: white;
     width: 100%;
     box-sizing: border-box;
+
+    .semester-nr {
+      font-weight: 500;
+    }
+
+    .lp-counter {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 8px;
+      height: 100%;
+      border-radius: 20px 6px 0px 20px;
+      background: var(--lp-background);
+
+      .invisible-text-for-width-only {
+        visibility: hidden;
+        white-space: nowrap;
+      }
+
+      .text {
+        opacity: 0.8;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        white-space: nowrap;
+      }
+    }
   }
 
   .veranstaltungs-container {
