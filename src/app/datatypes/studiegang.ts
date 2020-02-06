@@ -20,7 +20,8 @@ export interface StudiengangData {
 }
 
 export interface Regel {
-  mnemonicDesc: string;
+  mnemonicDescSuccess: string;
+  mnemonicDescFailure: string;
   check: (
     studiengangVeranstaltungen: Veranstaltung[],
     planung: Veranstaltung[]

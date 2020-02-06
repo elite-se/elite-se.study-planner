@@ -2,7 +2,8 @@ import { Regel, Studiengang } from "../studiegang";
 import { Veranstaltung, Modul, VeranstaltungsTyp } from "../veranstaltung";
 
 export class AllePflichtRegel implements Regel {
-  mnemonicDesc = "Alle Pflichtveranstaltungen sind eingeplant.";
+  mnemonicDescSuccess = "Alle Pflichtveranstaltungen sind eingeplant.";
+  mnemonicDescFailure = "Es sind nicht alle Pflichtveranstaltungen eingeplant.";
 
   constructor() {}
 
@@ -40,11 +41,14 @@ export class AllePflichtRegel implements Regel {
 
 export class MinLPRegel implements Regel {
   minLP: number;
-  mnemonicDesc: string;
+  mnemonicDescSuccess: string;
+  mnemonicDescFailure: string;
 
   constructor(minLP: number) {
     this.minLP = minLP;
-    this.mnemonicDesc = "Mindestens " + this.minLP + " LP sind eingeplant.";
+    this.mnemonicDescSuccess = "mind. " + this.minLP + " LP sind eingeplant.";
+    this.mnemonicDescFailure =
+      "Es sind zu wenig LP eingeplant (" + this.minLP + " benötigt).";
   }
 
   /**
@@ -66,16 +70,28 @@ export class MinLPRegel implements Regel {
 
 export class MinWahlpflichtLPInModulRegel implements Regel {
   modul: Modul;
-  mnemonicDesc: string;
+  mnemonicDescSuccess: string;
+  mnemonicDescFailure: string;
 
   constructor(modul: Modul) {
     this.modul = modul;
-    this.mnemonicDesc =
-      "Es sind mindenstes " +
+    this.mnemonicDescSuccess =
+      "Es " +
+      (this.modul.minWahlLP === 1 ? "ist" : "sind") +
+      " mind. " +
       this.modul.minWahlLP +
       " LP (Wahl) im Modul " +
       this.modul.name +
       " eingeplant.";
+
+    this.mnemonicDescFailure =
+      "Es " +
+      (this.modul.minWahlLP === 1 ? "muss" : "müssen") +
+      " mind. " +
+      this.modul.minWahlLP +
+      " LP (Wahl) im Modul " +
+      this.modul.name +
+      " eingeplant werden.";
   }
 
   /**
@@ -97,16 +113,28 @@ export class MinWahlpflichtLPInModulRegel implements Regel {
 
 export class MinVeranstaltungstypRegel implements Regel {
   typ: VeranstaltungsTyp;
-  mnemonicDesc: string;
+  mnemonicDescSuccess: string;
+  mnemonicDescFailure: string;
 
   constructor(typ: VeranstaltungsTyp) {
     this.typ = typ;
-    this.mnemonicDesc =
-      "Es ist mindestens " +
+    this.mnemonicDescSuccess =
+      "Es " +
+      (this.typ.minBelegteVeranstaltungen === 1 ? "ist" : "sind") +
+      " mind. " +
       this.typ.minBelegteVeranstaltungen +
       " " +
       this.typ.name +
       " eingeplant.";
+
+    this.mnemonicDescFailure =
+      "Es " +
+      (this.typ.minBelegteVeranstaltungen === 1 ? "muss" : "müssen") +
+      " mind. " +
+      this.typ.minBelegteVeranstaltungen +
+      " " +
+      this.typ.name +
+      " eingeplant werden.";
   }
 
   /**
@@ -117,7 +145,7 @@ export class MinVeranstaltungstypRegel implements Regel {
     belegung: Veranstaltung[]
   ): boolean {
     let belegtInTyp = belegung.filter(v => {
-      return v.typ === this.typ;
+      return v.typ.name === this.typ.name;
     });
     return belegtInTyp.length >= this.typ.minBelegteVeranstaltungen;
   }

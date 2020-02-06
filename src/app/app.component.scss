@@ -68,7 +68,7 @@
       border-radius: 5px 5px 0 0;
       font-weight: 500;
       text-align: center;
-      color: rgba(255, 255, 255, 0.8);
+      color: white;
       width: 100%;
       box-sizing: border-box;
 
@@ -83,9 +83,8 @@
       .down-btn {
         display: block;
         position: absolute;
-        right: 6px;
+        right: 12px;
         top: 6px;
-        transform: rotate(90deg);
 
         &:hover {
           cursor: pointer;
@@ -95,12 +94,20 @@
 
     .rules-container {
       padding: 12px;
+      padding-bottom: 6px; //because of rule-checker margin-bottom
       overflow-y: hidden;
-      transition: height 0.3s ease-out;
+      max-height: 250px;
+      box-sizing: border-box;
+      transition: max-height 0.2s ease-out;
 
       &.hidden {
-        height: 0px;
-        padding: 0;
+        max-height: 0px;
+        padding: 0 12px;
+      }
+
+      app-rule-checker {
+        display: block;
+        margin-bottom: 6px;
       }
     }
   }

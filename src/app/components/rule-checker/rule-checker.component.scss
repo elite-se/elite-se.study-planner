@@ -1,4 +1,16 @@
 .rule-checker {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    margin-right: 6px;
+    width: 22px;
+  }
+
+  .desc {
+    font-weight: 300;
+  }
+
   &.error {
     color: var(--warning-color);
   }
