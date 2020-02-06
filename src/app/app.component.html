@@ -1,5 +1,13 @@
+<header>
+  <div style="flex-grow: 1;"></div>
+  <h3>SE Study Planner</h3>
+  <div style="flex-grow: 1;"></div>
+  <fa name="bars" size="lg"></fa>
+</header>
+
 <div id="main-container">
   <div id="veranstaltungen">
+    <h4 class="title">Module & Veranstaltungen</h4>
     <app-modul-veranstaltungen
       *ngFor="let m of module"
       [modul]="m"
@@ -16,8 +24,13 @@
 
     <div id="rulecheckers">
       <h4 class="rules-header {{ allRegelnCheck ? 'success' : 'error' }}">
-        Anforderungen {{ allRegelnCheck ? "erfüllt" : "nicht erfüllt" }}
-        <span class="down-btn" (click)="toggleRegelnHidden()">>></span>
+        {{ succesfulRegelnCount }}/{{ regeln.length }} Anforderungen erfüllt
+        <fa
+          [name]="'angle-' + (regelnHidden ? 'up' : 'down')"
+          size="lg"
+          (click)="toggleRegelnHidden()"
+          class="down-btn"
+        ></fa>
       </h4>
       <div class="rules-container {{ regelnHidden ? 'hidden' : '' }} ">
         <app-rule-checker

@@ -30,6 +30,11 @@ export class AppComponent {
   regeln: StatefulRegel[] = [];
 
   allRegelnCheck: boolean = false;
+  get succesfulRegelnCount(): number {
+    return this.regeln.filter(r => {
+      return r.lastCheckState;
+    }).length;
+  }
 
   regelnHidden: boolean = true;
 
