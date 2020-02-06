@@ -10,6 +10,6 @@ export class BackendConnectionService {
   constructor(private http: HttpClient) {}
 
   getStudiengangSE14(): Observable<any> {
-    return this.http.get("/data/studiengang_se14.json");
+    return this.http.get("/data");
   }
 }
