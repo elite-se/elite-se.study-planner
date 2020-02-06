@@ -6,13 +6,13 @@
       >{{ veranstaltung.kuerzel }}</span
     >
 
-    <div
+    <fa
+      name="trash"
+      size="lg"
       class="delete-btn"
       *ngIf="!veranstaltung.isPflicht && !isMini"
       (click)="onXClicked()"
-    >
-      X
-    </div>
+    ></fa>
     <div class="title-container">
       <h3 class="title">
         {{ veranstaltung.titel }}
