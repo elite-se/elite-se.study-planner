@@ -50,15 +50,17 @@ Besonderheiten / Designentscheidungen:
 
 # Roadmap
 
-- Daten für alle Veranstaltungen anlegen
-- Detailbeschreibungen der Veranstaltungen in Popup anzeigen
-- About Info Popup hinzufügen
-- Drag and Drop
-- Export der gewählten Belegung als json/Excel/CSV/...
-- Import von Studiengangs- und Vorlesungsinformationen als json File(s)
-- GUI zum erstellen/editieren von Studiengangsinfos
-- Vorgängerabhängigkeiten zwischen Veranstaltungen integrieren
-- Backend mit Datenbank für Studiengänge
+* [x] Daten für alle Veranstaltungen anlegen
+* [ ] Detailbeschreibungen der Veranstaltungen in Popup anzeigen
+* [ ] About Info Popup hinzufügen
+* [ ] Drag and Drop
+* [ ] Export der gewählten Belegung als json/Excel/CSV/...
+* [ ] Upload & Import von Studiengangs- und Vorlesungsinformationen als json File(s)
+* [ ] "Auto-Belegung", die mit minimal vielen Veranstaltungen alle Regeln erfüllt
+* [ ] GUI zum erstellen/editieren von Studiengangsinfos
+* [ ] Vorgängerabhängigkeiten zwischen Veranstaltungen integrieren
+* [ ] Backend mit Datenbank für Studiengänge
+* [ ] Integrieren anderer Studiengänge -> generischeres Tool?
 
 # Lokales Setup
 
