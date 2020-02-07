@@ -1,5 +1,9 @@
-import { Regel, Studiengang } from "../studiegang";
-import { Veranstaltung, Modul, VeranstaltungsTyp } from "../veranstaltung";
+import { Regel, Studiengang } from "../../datatypes/studiegang";
+import {
+  Veranstaltung,
+  Modul,
+  VeranstaltungsTyp
+} from "../../datatypes/veranstaltung";
 
 export class AllePflichtRegel implements Regel {
   mnemonicDescSuccess = "Alle Pflichtveranstaltungen sind eingeplant.";
@@ -19,19 +23,14 @@ export class AllePflichtRegel implements Regel {
         return v.isPflicht;
       }
     );
-    console.log("Checking Pflichtveranstaltungen", pflichtVeranstaltungen);
     for (let pflicht of pflichtVeranstaltungen) {
-      console.log("Checking pflicht ", pflicht.id);
       let belegt = false;
       for (let geplant of belegung) {
-        console.log("   Ist it", geplant.id);
         if (pflicht.id === geplant.id) {
-          console.log("        Yes :)");
           belegt = true;
         }
       }
       if (!belegt) {
-        console.log("Returning false");
         return false;
       }
     }

@@ -22,22 +22,6 @@
       ></app-semester-swim-lane>
     </div>
 
-    <div id="rulecheckers">
-      <h4 class="rules-header {{ allRegelnCheck ? 'success' : 'error' }}">
-        {{ succesfulRegelnCount }}/{{ regeln.length }} Anforderungen erfüllt
-        <fa
-          [name]="'angle-' + (regelnHidden ? 'up' : 'down')"
-          size="lg"
-          (click)="toggleRegelnHidden()"
-          class="down-btn"
-        ></fa>
-      </h4>
-      <div class="rules-container {{ regelnHidden ? 'hidden' : '' }} ">
-        <app-rule-checker
-          *ngFor="let regel of regeln"
-          [regel]="regel"
-        ></app-rule-checker>
-      </div>
-    </div>
+    <app-regeln-display></app-regeln-display>
   </div>
 </div>

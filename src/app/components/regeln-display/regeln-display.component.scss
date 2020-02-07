@@ -1,0 +1,74 @@
+#regeln-display {
+  box-sizing: border-box;
+  background: white;
+  width: 100%;
+  border-radius: 5px;
+
+  .regeln-header {
+    position: relative;
+    padding: 6px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+
+    &.error {
+      background: var(--warning-color);
+    }
+
+    &.success {
+      background: var(--success-color);
+    }
+
+    .down-btn {
+      display: block;
+      position: absolute;
+      right: 12px;
+      top: 6px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .regeln-container {
+    padding: 12px;
+    padding-bottom: 6px; //because of regel margin-bottom
+    overflow-y: hidden;
+    max-height: 250px;
+    box-sizing: border-box;
+    transition: max-height 0.2s ease-out;
+
+    &.hidden {
+      max-height: 0px;
+      padding: 0 12px;
+    }
+
+    .regel {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+
+      .icon {
+        margin-right: 6px;
+        width: 22px;
+      }
+
+      .desc {
+        font-weight: 300;
+      }
+
+      &.error {
+        color: var(--warning-color);
+      }
+
+      &.success {
+        color: var(--success-color);
+      }
+    }
+  }
+}

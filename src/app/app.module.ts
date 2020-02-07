@@ -9,7 +9,7 @@ import { VeranstaltungCardComponent } from "./components/veranstaltung-card/vera
 import { HttpClientModule } from "@angular/common/http";
 import { ModulCssClassPipe } from "./pipes/modul-css-class.pipe";
 import { ModulVeranstaltungenComponent } from "./components/modul-veranstaltungen/modul-veranstaltungen.component";
-import { RuleCheckerComponent } from "./components/rule-checker/rule-checker.component";
+import { RegelnDisplayComponent } from "./components/regeln-display/regeln-display.component";
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { RuleCheckerComponent } from "./components/rule-checker/rule-checker.com
     VeranstaltungCardComponent,
     ModulCssClassPipe,
     ModulVeranstaltungenComponent,
-    RuleCheckerComponent
+    RegelnDisplayComponent
   ],
   imports: [BrowserModule, HttpClientModule, AngularFontAwesomeModule],
   providers: [],

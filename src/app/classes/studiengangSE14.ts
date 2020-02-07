@@ -9,7 +9,7 @@ import {
   MinLPRegel,
   MinWahlpflichtLPInModulRegel,
   MinVeranstaltungstypRegel
-} from "../datatypes/rules/se14-regeln";
+} from "./rules/se14-regeln";
 
 export class StudiengangSE14 implements Studiengang {
   name: string;
