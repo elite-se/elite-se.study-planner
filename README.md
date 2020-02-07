@@ -37,30 +37,30 @@ Die (noch nicht vollständigen) Daten für den 14. Jahrgang sind unter `data/stu
 
 Angular frontend, das links alle Veranstaltungen eines Studiengangs nach Modulen geordnet anzeigt und rechts die konkrete Auswahl an Veranstaltungen auf die Semester. Rechts unten lebt eine Komponente, die die Regeln des Studiengangs anzeigt und ob diese durch die gewählten Veranstaltungen alle erfüllt sind (zB mind. 120 LP, mind. 1 Seminar, etc.).
 
-"Behind the scenes" existieren zwei Services:
+"Behind the scenes" existieren drei Services:
 
 - `StudiengangService`, der hauptsächlich die Daten vom Backend holt und diese der ganzen App zur Verfügung stellt.
 - `BelegungService`, der die aktuelle Auswahl an Vorlesungen hält und Methoden sowie Events zum Hinzufügen/Entfernen von Veranstaltungen zur Belegung bereitstellt.
+- `RegelCeckerService`, der bei jeder Belegungsänderung alle Regeln des aktuellen Studiengangs überprüft, den aktuellen Regelzustand speichert und Components zur Verfügung stellt.
 
 Besonderheiten / Designentscheidungen:
 
 - Pflichtveranstaltungen werden sofort nach Laden der Daten eines Studiengangs in die Belegung übernommen
 - Veranstaltungen werden als 'cards' dargestellt. Dieselbe Komponente wird in 'mini' Ansicht links in der Modulansicht und in normaler Größe rechts in den Semestern verwendet, was natürlich zu etwas "Schizophrenie" im html & css führt.
-- Die Regelüberprüfung wird von der `app.component` bei jedem Änderungsevent des Belegungservice neu getriggered. -> To be refactored
 
 # Roadmap
 
-* [x] Daten für alle Veranstaltungen anlegen
-* [ ] Detailbeschreibungen der Veranstaltungen in Popup anzeigen
-* [ ] About Info Popup hinzufügen
-* [ ] Drag and Drop
-* [ ] Export der gewählten Belegung als json/Excel/CSV/...
-* [ ] Upload & Import von Studiengangs- und Vorlesungsinformationen als json File(s)
-* [ ] "Auto-Belegung", die mit minimal vielen Veranstaltungen alle Regeln erfüllt
-* [ ] GUI zum erstellen/editieren von Studiengangsinfos
-* [ ] Vorgängerabhängigkeiten zwischen Veranstaltungen integrieren
-* [ ] Backend mit Datenbank für Studiengänge
-* [ ] Integrieren anderer Studiengänge -> generischeres Tool?
+- [x] Daten für alle Veranstaltungen anlegen
+- [ ] Detailbeschreibungen der Veranstaltungen in Popup anzeigen
+- [ ] About Info Popup hinzufügen
+- [ ] Drag and Drop
+- [ ] Export der gewählten Belegung als json/Excel/CSV/...
+- [ ] Upload & Import von Studiengangs- und Vorlesungsinformationen als json File(s)
+- [ ] "Auto-Belegung", die mit minimal vielen Veranstaltungen alle Regeln erfüllt
+- [ ] GUI zum erstellen/editieren von Studiengangsinfos
+- [ ] Vorgängerabhängigkeiten zwischen Veranstaltungen integrieren
+- [ ] Backend mit Datenbank für Studiengänge
+- [ ] Integrieren anderer Studiengänge -> generischeres Tool?
 
 # Lokales Setup
 
