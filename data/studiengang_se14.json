@@ -611,7 +611,7 @@
     {
       "id": 501,
       "typ": {
-        "name": "Seminar",
+        "name": "Schlüsselqualifikation",
         "minBelegteVeranstaltungen": 0
       },
       "titel": "Erfolg im Team",
@@ -633,7 +633,7 @@
     {
       "id": 502,
       "typ": {
-        "name": "Seminar",
+        "name": "Schlüsselqualifikation",
         "minBelegteVeranstaltungen": 0
       },
       "titel": "Präsentationstraining",
@@ -655,7 +655,7 @@
     {
       "id": 503,
       "typ": {
-        "name": "Seminar",
+        "name": "Schlüsselqualifikation",
         "minBelegteVeranstaltungen": 0
       },
       "titel": "Schreibtraining",
@@ -677,7 +677,7 @@
     {
       "id": 504,
       "typ": {
-        "name": "Seminar",
+        "name": "Schlüsselqualifikation",
         "minBelegteVeranstaltungen": 0
       },
       "titel": "Change-Prozesse in verschiedenen Arbeitskontexten",
@@ -699,7 +699,7 @@
     {
       "id": 505,
       "typ": {
-        "name": "Seminar",
+        "name": "Schlüsselqualifikation",
         "minBelegteVeranstaltungen": 0
       },
       "titel": "Moderationstechniken",
@@ -721,7 +721,7 @@
     {
       "id": 506,
       "typ": {
-        "name": "Seminar",
+        "name": "Schlüsselqualifikation",
         "minBelegteVeranstaltungen": 0
       },
       "titel": "Interkulturelle Kommunikation",
@@ -743,7 +743,7 @@
     {
       "id": 507,
       "typ": {
-        "name": "Seminar",
+        "name": "Schlüsselqualifikation",
         "minBelegteVeranstaltungen": 0
       },
       "titel": "Führungskompetenz",
