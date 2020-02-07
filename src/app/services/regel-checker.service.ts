@@ -3,6 +3,11 @@ import { StudiengangService } from "./studiengang.service";
 import { BelegungService } from "./belegung.service";
 import { Regel } from "../datatypes/studiegang";
 
+/**
+ * Service that gets the regeln from a Studiengang and checks them each time the Belegung changes.
+ * Saves the result of those checks so components can display these results.
+ */
+
 interface RegelChecker {
   regel: Regel;
   lastState: boolean;

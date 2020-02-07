@@ -2,6 +2,11 @@ import { Injectable, Output, EventEmitter } from "@angular/core";
 import { Veranstaltung } from "../datatypes/veranstaltung";
 import { StudiengangService } from "./studiengang.service";
 
+/**
+ * Service that saves the currently selected Veranstaltungen (i.e. the Belegung).
+ * Veranstaltungen can be added to or removed from the Belegung via this service.
+ */
+
 @Injectable({
   providedIn: "root"
 })

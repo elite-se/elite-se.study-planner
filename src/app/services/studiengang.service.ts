@@ -4,6 +4,13 @@ import { Veranstaltung, Modul } from "../datatypes/veranstaltung";
 import { BackendConnectionService } from "./backend-connection.service";
 import { StudiengangSE14 } from "../classes/studiengangSE14";
 
+/**
+ * Service that holds the currently selected Studiengang.
+ * As of now only MasterSE14 is supported but this could be
+ * extended to support more than one Studiengang, once the
+ * backend provides that data.
+ */
+
 @Injectable({
   providedIn: "root"
 })
