@@ -73,7 +73,7 @@
       ],
       "links": [],
       "Prof": "Alexander Knapp",
-      "Uni": "Augsburg",
+      "Uni": "Uni Augsburg",
       "isPflicht": true,
       "isBlock": false,
       "modul": {
@@ -88,7 +88,7 @@
         "name": "Vorlesung",
         "minBelegteVeranstaltungen": 0
       },
-      "titel": "Modellierung, Spezifikation und Verifikation",
+      "titel": "Modellierung, Spezifikation und Verifikation reaktiver Systeme",
       "kuerzel": "MSV",
       "lp": 6,
       "beschreibung": "Reaktive Systeme verarbeiten Informationen unter Reaktion auf und in Interaktion mit einer Umgebung. Typische Vertreter sind Betriebssysteme und Software für Steuergeräte; häufig finden sich reaktive Systeme in sicherheitskritischen Bereichen, etwa medizinischen Anwendungen, Zahlungssystemen oder Zugangskontrollsystemen, in denen hohe Zuverlässigkeitsanforderungen gestellt werden. Die prägenden Eigenschaften reaktiver Systeme sind Nebenläufigkeit, Kommunikation und Nichtterminierung. Die Vorlesung stellt Ansätze zur Modellierung und Spezifikation reaktiver Systeme vor und gibt eine Einführung in Verfeinerungs- und Verifikationstechniken für zuverlässige, reaktive Systeme.",
@@ -172,7 +172,7 @@
       "beschreibung": "Es werden drei klassische Ansätze zur Semantik von Programmiersprachen besprochen: In der operationalen Semantik wird die Bedeutung eines programmiersprachlichen Konstrukts dadurch festgelegt, wie es auszuführen ist und zu welchen Effekten es führt. In der denotationellen Semantik wird von der spezifischen Ausführungsart abstrahiert und lediglich der Effekt eines Konstrukts betrachtet. Schließlich wird im axiomatischen Ansatz der Effekt eines Konstrukts durch Zusicherungen spezifiziert. Als Beispielsprache für die unterschiedlichen semantischen Ansätze dient eine einfache, imperative WHILE-Sprache, die im Verlauf der Vorlesung um syntaktische Konstrukte erweitert wird.",
       "schlagworte": [],
       "links": [],
-      "Prof": "n.a.",
+      "Prof": "Alexander Knapp",
       "Uni": "n.a.",
       "isPflicht": false,
       "isBlock": false,
@@ -244,7 +244,7 @@
       "beschreibung": "Understand the interaction between database systems resp. algorithms and modern computer architecture (esp. CPU, Cache, Primary Storage) and learn how to develop resp. to modify the internals of database systems in order to make use of the properties of these computer architecture features.",
       "schlagworte": [],
       "links": [],
-      "Prof": "n.a.",
+      "Prof": "Thomas Neumann",
       "Uni": "TUM",
       "isPflicht": false,
       "isBlock": false,
@@ -391,7 +391,7 @@
       ],
       "links": [],
       "Prof": "Alexander Knapp",
-      "Uni": "n.a.",
+      "Uni": "LMU",
       "isPflicht": false,
       "isBlock": true,
       "modul": {
@@ -560,6 +560,114 @@
       "modul": {
         "id": 2,
         "name": "Software Engineering & Verteilte Systeme"
+      },
+      "semester": 3
+    },
+
+    {
+      "id": 401,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Human-Computer-Interaction",
+      "kuerzel": "HCI",
+      "lp": 6,
+      "beschreibung": "Die Entwicklung multipler Medien zur Informationsdarbietung und zur Gestaltung der Mensch-Maschine-Schnittstelle hat in nur wenigen Jahren den Umgang mit Computern grundlegend verändert und wesentlich dazu beigetragen, Computertechnologie einer breiten Benutzerschicht zugänglich zu machen. In der Vorlesung werden zunächst die theoretischen Grundlagen moderner Interaktionsparadigmen vorgestellt bevor auf spezifische Verfahren zur Erkennung und Interpretation von Benutzereingaben sowie zur Generierung und Synchronisation von Systemausgaben eingegangen wird. Die hohe Komplexität der verwendeten Ein- und Ausgabemodalitäten erfordert zudem die Berücksichtigung spezifischer Usabilityrichtlinien beim Entwurf interaktiver Systeme, die im weiteren Verlauf der Vorlesung eingeführt werden.",
+      "schlagworte": [
+        "Interaktionsmodalitäten und -techniken",
+        "Medienspezifischen Analyse (Sprache, Gestik, Mimik etc)",
+        "Fusionsmodelle für vielkanalige Sensorsysteme (visuelle, auditive, haptische und biophysiologische Sensoren)",
+        "Medienspezifische Generierung (Sprache, Animationen etc.)",
+        "Kontextsensitive Auswahl von Medien",
+        "Medienkoordination und –synchronisation",
+        "Multimedialer Zugang zu Informationssystemen und zum WWW",
+        "Multimodale Dialogsysteme",
+        "Benutzer- und Diskursmodellierung",
+        "Agentenbasierte Multimediale Interaktion",
+        "Benutzungsschnittstellen der nächsten Generation (Perzeptive Interfaces, Emotionale Interfaces, Mensch-Roboter Interaktion etc.)"
+      ],
+      "links": [],
+      "Prof": "Elisabeth André",
+      "Uni": "Uni Augsburg",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "HCI"
+      },
+      "semester": 2
+    },
+    {
+      "id": 402,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Usability Engineering",
+      "kuerzel": "UE",
+      "lp": 6,
+      "beschreibung": "Durch die zunehmende Verbreitung von Computern in allen Lebensreichen und deren Einbettung in die natürliche Umgebung des Benutzers wird die Gestaltung der Mensch-Maschine Interaktion zu einer großen Herausforderung. Ziel der Veranstaltung ist es grundlegende Techniken zum Entwurf von Benutzungsoberflächen zu vermitteln. Während bislang rein technische Aspekte dominierten, geht der Trend hin zu Entwurfsprozessen, die den Nutzer in den Vordergrund stellen und ihn bereits in der Entwurfsphase miteinbeziehen.Behandelt werden folgende Themen: Entwurfsprinzipien und Normen; Menschliche Informations-, Handlungs- und Wahrnehmungsprozesse; Benutzerzentrierter Entwicklungsprozess; Evaluierung von interaktiven Systemen. Zu Beginn der Veranstaltung werden Grundlagen des Usability Engineering erarbeitet. Die erlernten Techniken werden dann anhand eines konkreten Projekts umgesetzt, wobei alle Phasen eines benutzerzentrierten Entwicklungsprozesses zumindest ansatzweise durchlaufen werden. In Gruppen soll eine Applikation analysiert, entworfen, implementiert und evaluiert werden.",
+      "schlagworte": [
+        "Interaktionstechniken und –stile",
+        "Kognitive Grundlagen (Menschliche Informations-, Wahrnehmungs- und Handlungsprozesse) und deren Anwendung auf den Entwurf interaktiver Systeme",
+        "Entwurfsprinzipien und Normen",
+        "Vorgehensweisen und Methoden zum Entwurf interaktiver Systeme (z.B. Prototyping, partizipative Systemgestaltung)",
+        "Befragungs- und Beobachtungstechniken, Evaluierung von interaktiven Systemen (Formale Evaluierung, Heuristische Evaluierung, Empirische Evaluierung)",
+        "Analyse und Interpretation von empirischen Daten"
+      ],
+      "links": [],
+      "Prof": "Elisabeth André",
+      "Uni": "Uni Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "HCI"
+      },
+      "semester": 3
+    },
+    {
+      "id": 403,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Human-Computer-Interaction",
+      "kuerzel": "SemHCI",
+      "lp": 4,
+      "beschreibung": "",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Elisabeth André",
+      "Uni": "Uni Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "HCI"
+      },
+      "semester": 3
+    },
+    {
+      "id": 404,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Maschinelles Lernen und innovative Interaktionstechniken",
+      "kuerzel": "SemKI",
+      "lp": 4,
+      "beschreibung": "",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Elisabeth André",
+      "Uni": "Uni Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "HCI"
       },
       "semester": 3
     },
