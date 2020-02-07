@@ -607,6 +607,160 @@
         "name": "Sonstiges"
       },
       "semester": 4
+    },
+    {
+      "id": 501,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Erfolg im Team",
+      "kuerzel": "EiT",
+      "lp":2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen. Sie erarbeiten Impulse und Handlungsanleitungen, wie effektiv im Team zusammengearbeitet werden kann.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 5,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 1
+    },
+    {
+      "id": 502,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Präsentationstraining",
+      "kuerzel": "PT",
+      "lp":2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Theoretische Grundlagen zur Gestaltung von Präsentationen und zur Vorbereitung von Vorträgen, Praktische Erfahrungen durch die Anwendung der vorgestellten Techniken in eigenen Kurzvorträgen",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 5,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 1
+    },
+    {
+      "id": 503,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Schreibtraining",
+      "kuerzel": "SchrT",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Kenntnisse über des Verfassen verständlicher und am Leser orientierter Texte, Praktische Erfahrungen im zielgerichteten Überarbeiten und Verbessern von Texten",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 5,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 1
+    },
+    {
+      "id": 504,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Change-Prozesse in verschiedenen Arbeitskontexten",
+      "kuerzel": "CP-Ak",
+      "lp":2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Kenntnisse über Phasen eines Changeprozesses, Kenntnisse über unterschiedliche Ausrichtungen von Changevorhaben und deren Auswirkungen auf die Organisation, Changekompetenz als Erfolgsfaktor im Projektmanagement, Befähigung der Teilnehmer zur erfolgreichen Interaktion mit verschiedenen Abteilungen, Funktionslogiken und Wertesystemen, Collaborative Kompetenz im Umgang mit unterschiedlichen Arbeitswelten: z.B. Spezialisten, Verwaltungen & ablauforientierten Abteilungen (Operations), Verkaufs- / Vertriebs-Abteilungen, Forschungs- und Kreativ-Abteilungen.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 5,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 505,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Moderationstechniken",
+      "kuerzel": "ModT",
+      "lp":2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Sie haben Einblick in die Aufgaben eines Moderators, Sie können gängige Techniken für unterschiedliche Besprechungssituationen anwenden, Sie haben Erfahrung im Einsatz dieser Techniken durch praktische Erprobung in Rollenspielen",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 5,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 506,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Interkulturelle Kommunikation",
+      "kuerzel": "IntK",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: -Einblick in die Herausforderungen interkultureller Begegnungen; -Praktischen Erfahrung im Umgang mit kulturell bedingten Kommunikations- und Kooperationsproblemen",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 5,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 507,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Führungskompetenz",
+      "kuerzel": "Fk",
+      "lp": 3,
+      "beschreibung": "Nach dem Besuch der Lehrveranstaltung haben die Studierenden ein vertieftes Verständnis der Grundbausteine der Führung. Sie können ihren eigenen Führungsstil erkennen und entwickeln, sie haben Erfahrung in der Motivation anderer und Feedback zum Verhältnis von Selbstbild und Fremdbild.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 5,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 2
     }
   ]
 }
