@@ -10,21 +10,26 @@
     },
     {
       "id": 2,
-      "name": "Software Engineering & Verteilte Systeme",
+      "name": "Software Engineering",
       "minWahlLP": 6
     },
     {
       "id": 3,
-      "name": "Datenbanken",
+      "name": "Verteilte Systeme",
       "minWahlLP": 0
     },
     {
       "id": 4,
-      "name": "HCI",
+      "name": "Datenbanken",
       "minWahlLP": 0
     },
     {
       "id": 5,
+      "name": "HCI",
+      "minWahlLP": 0
+    },
+    {
+      "id": 6,
       "name": "Softskill-Kurse",
       "minWahlLP": 10
     }
@@ -215,119 +220,6 @@
     },
 
     {
-      "id": 301,
-      "typ": {
-        "name": "Vorlesung",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Datenbanksysteme",
-      "kuerzel": "DBS1",
-      "lp": 6,
-      "beschreibung": "Die Vorlesung vermittelt Kenntnisse die zum Entwurf und Betrieb von Datenbanksystemen benötigt werden. Behandelt wird das relationale Datenmodell das modernen Datenbanken zu Grunde liegt, Modellierung- und Entwurfstechniken für das Datenbankdesign und relationale Anfragesprachen, sowie deren Grundlage, die relationale Algebra. Außerdem behandelt wird die Anbindung von Datenbanken an moderne Programmiersprachen wie JAVA und Datenbankerweiterungen welche die Verarbeitung von XML Daten oder objektorientierte Datenmodelle unterstützen. Weiterer Inhalt der Vorlesung sind die Technologien, die bei der Implementierung von Datenbanksystemen eingesetzt werden, z.B. zur Anfragebearbeitung, Transaktionsverwaltung, Mehrbenutzersynchronisation, Fehlerbehandlung, etc.",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "Alfons Kemper",
-      "Uni": "TUM",
-      "isPflicht": true,
-      "isBlock": false,
-      "modul": {
-        "id": 3,
-        "name": "Datenbanken"
-      },
-      "semester": 1
-    },
-    {
-      "id": 302,
-      "typ": {
-        "name": "Vorlesung",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Datenbanksysteme und moderne CPU-Architekturen",
-      "kuerzel": "DB-IMPL",
-      "lp": 6,
-      "beschreibung": "Understand the interaction between database systems resp. algorithms and modern computer architecture (esp. CPU, Cache, Primary Storage) and learn how to develop resp. to modify the internals of database systems in order to make use of the properties of these computer architecture features.",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "Thomas Neumann",
-      "Uni": "TUM",
-      "isPflicht": false,
-      "isBlock": false,
-      "modul": {
-        "id": 3,
-        "name": "Datenbanken"
-      },
-      "semester": 2
-    },
-    {
-      "id": 303,
-      "typ": {
-        "name": "Vorlesung",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Web-Datenbanken",
-      "kuerzel": "Web-DBS",
-      "lp": 5,
-      "beschreibung": "In vielen aktuellen Einsatzgebieten sind Datenbanken über Web-basierte Schnittstellen für Benutzer zugänglich, sei es beim Einkauf bei einem Internethändler, bei der Kundenbetreuung, beim Online-Banking, etc. Die große Zahl an gleichzeitigen Benutzern und die Verteilung der Anwendungen auf mehrere verschiedene Hard- und Softwaresysteme wie Web-Server, Datenbank-Server, Application-Server, etc haben zur Entwicklung spezieller Softwarearchitekturen und Entwicklungsparadigmen geführt. Die Vorlesung behandelt aktuelle Programmiersprachen, Technologien und Architekturen für moderne Web-basierte Informationssysteme. Diese Veranstaltung soll neben den theoretischen Grundlagen auch praktische Erfahrung beim Umgang mit den relevanten Technologien vermitteln. Aufgabe der Studenten ist deshalb neben dem Erlernen der theoretischen Grundlagen auch der Entwurf und die Implementierung einer modernen Web-basierten Datenbankanwendung.",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "TUM",
-      "isPflicht": false,
-      "isBlock": false,
-      "modul": {
-        "id": 3,
-        "name": "Datenbanken"
-      },
-      "semester": 3
-    },
-    {
-      "id": 304,
-      "typ": {
-        "name": "Vorlesung",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Grundlagen Data Engineering",
-      "kuerzel": "DE",
-      "lp": 6,
-      "beschreibung": "Die Veranstaltung behandelt grundlegende Techniken zur Organisation und effizienten Analyse (sehr) großer Datenmengen. Dazu werden Verfahren der verteilten Datenhaltung in Abhängigkeit von der Systemarchitektur (z.B. Mehrkernsysteme, Multiprozessorsysteme, Cluster), verteilte und parallele Datenanalyse, Statistik-gestützte Optimierung von Analyseprozessen, map/reduce Techniken und ihre Verallgemeinerung zur verteilten Anfrageverarbeitung vorgestellt. Darüber hinaus werden Anwendungen in Systemen wie Hadoop und in NoSQL Systemen, die gesellschaftlichen Auswirkungen der Datenanalyse und die Bedeutung des Datenschutzes thematisiert.",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "TUM",
-      "isPflicht": false,
-      "isBlock": false,
-      "modul": {
-        "id": 3,
-        "name": "Datenbanken"
-      },
-      "semester": 3
-    },
-    {
-      "id": 305,
-      "typ": "Seminar",
-      "titel": "Seminar Datenbanken",
-      "kuerzel": "SemDB",
-      "lp": 4,
-      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet der Datenbanken selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
-      "schlagworte": [
-        "Literaturrecherche",
-        "Wissenschaftliche Methodik",
-        "Zeitmanagement",
-        "Kommunikationsfähigkeit"
-      ],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "n.a.",
-      "isPflicht": false,
-      "isBlock": false,
-      "modul": {
-        "id": 3,
-        "name": "Datenbanken"
-      },
-      "semester": 3
-    },
-
-    {
       "id": 201,
       "typ": {
         "name": "Vorlesung",
@@ -345,7 +237,7 @@
       "isBlock": false,
       "modul": {
         "id": 2,
-        "name": "Software Engineering & Verteilte Systeme"
+        "name": "Software Engineering"
       },
       "semester": 1
     },
@@ -367,7 +259,7 @@
       "isBlock": true,
       "modul": {
         "id": 2,
-        "name": "Software Engineering & Verteilte Systeme"
+        "name": "Software Engineering"
       },
       "semester": 1
     },
@@ -400,7 +292,7 @@
       "isBlock": true,
       "modul": {
         "id": 2,
-        "name": "Software Engineering & Verteilte Systeme"
+        "name": "Software Engineering"
       },
       "semester": 2
     },
@@ -433,7 +325,7 @@
       "isBlock": true,
       "modul": {
         "id": 2,
-        "name": "Software Engineering & Verteilte Systeme"
+        "name": "Software Engineering"
       },
       "semester": 2
     },
@@ -462,7 +354,7 @@
       "isBlock": false,
       "modul": {
         "id": 2,
-        "name": "Software Engineering & Verteilte Systeme"
+        "name": "Software Engineering"
       },
       "semester": 2
     },
@@ -497,34 +389,12 @@
       "isBlock": false,
       "modul": {
         "id": 2,
-        "name": "Software Engineering & Verteilte Systeme"
+        "name": "Software Engineering"
       },
       "semester": 3
     },
     {
       "id": 207,
-      "typ": {
-        "name": "Vorlesung",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Software Engineering für Verteilte Systeme",
-      "kuerzel": "SE-VS",
-      "lp": 6,
-      "beschreibung": "Diese Veranstaltung beschäftigt sich mit Softwarearchitekturen verteilter System, mit semantischen Techniken und mit Multi-Agenten-Systemen.",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "n.a.",
-      "isPflicht": false,
-      "isBlock": false,
-      "modul": {
-        "id": 2,
-        "name": "Software Engineering & Verteilte Systeme"
-      },
-      "semester": 3
-    },
-    {
-      "id": 208,
       "typ": {
         "name": "Vorlesung",
         "minBelegteVeranstaltungen": 0
@@ -541,7 +411,7 @@
       "isBlock": false,
       "modul": {
         "id": 2,
-        "name": "Software Engineering & Verteilte Systeme"
+        "name": "Software Engineering"
       },
       "semester": 3
     },
@@ -551,7 +421,7 @@
         "name": "Seminar",
         "minBelegteVeranstaltungen": 1
       },
-      "titel": "Projektseminar Softwaretechnik",
+      "titel": "Projektseminar (PuLi)",
       "kuerzel": "PULI",
       "lp": 4,
       "beschreibung": "Jeder Studierende des Elitestudiengangs sollte während seines Studiums an einem Spezialprojekt („Pushing-the-limits-Projekt“) teilnehmen. Beispiele für solche Projekte der bisherigen Jahrgänge sind XENAKIS (http://xenakis.3-n.de/), Sightplayer, Monopedia und CATS. Die Projekte gehen dabei immer auf studentische Initiativen und Ideen zurück. Es gibt damit für die Studierenden die Möglichkeit ein interessantes und herausforderndes Projekt in Form einer Lehrveranstaltung zu bearbeiten. Die Spezialprojekte beginnen im 2. Semester (Ideenfindung und Konzeption) und dauern bis in das 3. Semester. Die Pushing-the-limits-Projekte werden als Seminare abgerechnet, womit auch der Forderung der Prüfungsordnung genüge getan ist, genau ein Seminar zu absolvieren.",
@@ -563,13 +433,303 @@
       "isBlock": false,
       "modul": {
         "id": 2,
-        "name": "Software Engineering & Verteilte Systeme"
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+    {
+      "id": 209,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Softwaretechnik",
+      "kuerzel": "SemST",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet des Software Engineering selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+    {
+      "id": 210,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Automotive Software Engineering",
+      "kuerzel": "SemASE",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet des Automotive Software Engineering selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+    {
+      "id": 211,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Grundlagen des Software und Systems Engineering",
+      "kuerzel": "SemSSE",
+      "lp": 4,
+      "beschreibung": "Nach dem Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien auf dem Gebiet des Software und Systems Engineering selbstständig zu erarbeiten und bezogen auf ein spezielles wissenschaftlich anspruchsvolles Thema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz neuer Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+
+    {
+      "id": 301,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Verteilte Systeme",
+      "kuerzel": "VS",
+      "lp": 6,
+      "beschreibung": "Inhalte dieser Veranstaltung sind grundlegende Begriffe und Techniken der Entwicklung verteilter Systeme.",
+      "schlagworte": [
+        "Networks",
+        "Protocol and Services",
+        "Interprocess Communication",
+        "Processes and Threads",
+        "Synchronization",
+        "Coordination",
+        "SOA",
+        "Web Service",
+        "REST",
+        "Web Service Composition"
+      ],
+      "links": [],
+      "Prof": "Bernhard Bauer",
+      "Uni": "Uni Augsburg",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Verteilte Systeme"
+      },
+      "semester": 2
+    },
+    {
+      "id": 302,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Software Engineering für Verteilte Systeme",
+      "kuerzel": "SE-VS",
+      "lp": 6,
+      "beschreibung": "Diese Veranstaltung beschäftigt sich mit Softwarearchitekturen verteilter System, mit semantischen Techniken und mit Multi-Agenten-Systemen. Nach der erfolgreichen Teilnahme an der Lehrveranstaltung haben die Studierenden ein vertieftes Verständnis für Service-orientierte Architekturen, Softwarearchitekturen und semantische Technologien und sind in der Lage, solche Technologien zu verstehen, zu bewerten und können diese auf anwendungsspezifische Probleme in Projekten übertragen. Sie können damit Lösungen und Architekturen für komplexe Softwaresysteme entwickeln und die fachlichen Lösungskonzepte kritisch evaluieren.",
+      "schlagworte": [
+        "Design of Software Architectures",
+        "Documentation of Architectures",
+        "Evaluation of Architectures",
+        "Semantic Technologies",
+        "Semantic Web",
+        "Ontology Languages",
+        "Description Logics",
+        "Reasoning with OWL",
+        "Description Logic Reasoning",
+        "Advanced Reasoning Techniques",
+        "Multi-Agent Systems",
+        "Intelligent Agents",
+        "Agent architectures",
+        "Reactive and hybrid agents",
+        "Interaction in Multi-Agent systems"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Verteilte Systeme"
+      },
+      "semester": 3
+    },
+    {
+      "id": 303,
+      "typ": "Seminar",
+      "titel": "Seminar Verteilte Systeme",
+      "kuerzel": "SemVS",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet der Verteilten Systeme selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Verteilte Systeme"
       },
       "semester": 3
     },
 
     {
       "id": 401,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Datenbanksysteme",
+      "kuerzel": "DBS1",
+      "lp": 6,
+      "beschreibung": "Die Vorlesung vermittelt Kenntnisse die zum Entwurf und Betrieb von Datenbanksystemen benötigt werden. Behandelt wird das relationale Datenmodell das modernen Datenbanken zu Grunde liegt, Modellierung- und Entwurfstechniken für das Datenbankdesign und relationale Anfragesprachen, sowie deren Grundlage, die relationale Algebra. Außerdem behandelt wird die Anbindung von Datenbanken an moderne Programmiersprachen wie JAVA und Datenbankerweiterungen welche die Verarbeitung von XML Daten oder objektorientierte Datenmodelle unterstützen. Weiterer Inhalt der Vorlesung sind die Technologien, die bei der Implementierung von Datenbanksystemen eingesetzt werden, z.B. zur Anfragebearbeitung, Transaktionsverwaltung, Mehrbenutzersynchronisation, Fehlerbehandlung, etc.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Alfons Kemper",
+      "Uni": "TUM",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Datenbanken"
+      },
+      "semester": 1
+    },
+    {
+      "id": 402,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Datenbanksysteme und moderne CPU-Architekturen",
+      "kuerzel": "DB-IMPL",
+      "lp": 6,
+      "beschreibung": "Understand the interaction between database systems resp. algorithms and modern computer architecture (esp. CPU, Cache, Primary Storage) and learn how to develop resp. to modify the internals of database systems in order to make use of the properties of these computer architecture features.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Thomas Neumann",
+      "Uni": "TUM",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "Datenbanken"
+      },
+      "semester": 2
+    },
+    {
+      "id": 403,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Web-Datenbanken",
+      "kuerzel": "Web-DBS",
+      "lp": 5,
+      "beschreibung": "In vielen aktuellen Einsatzgebieten sind Datenbanken über Web-basierte Schnittstellen für Benutzer zugänglich, sei es beim Einkauf bei einem Internethändler, bei der Kundenbetreuung, beim Online-Banking, etc. Die große Zahl an gleichzeitigen Benutzern und die Verteilung der Anwendungen auf mehrere verschiedene Hard- und Softwaresysteme wie Web-Server, Datenbank-Server, Application-Server, etc haben zur Entwicklung spezieller Softwarearchitekturen und Entwicklungsparadigmen geführt. Die Vorlesung behandelt aktuelle Programmiersprachen, Technologien und Architekturen für moderne Web-basierte Informationssysteme. Diese Veranstaltung soll neben den theoretischen Grundlagen auch praktische Erfahrung beim Umgang mit den relevanten Technologien vermitteln. Aufgabe der Studenten ist deshalb neben dem Erlernen der theoretischen Grundlagen auch der Entwurf und die Implementierung einer modernen Web-basierten Datenbankanwendung.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "TUM",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "Datenbanken"
+      },
+      "semester": 3
+    },
+    {
+      "id": 404,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Grundlagen Data Engineering",
+      "kuerzel": "DE",
+      "lp": 6,
+      "beschreibung": "Die Veranstaltung behandelt grundlegende Techniken zur Organisation und effizienten Analyse (sehr) großer Datenmengen. Dazu werden Verfahren der verteilten Datenhaltung in Abhängigkeit von der Systemarchitektur (z.B. Mehrkernsysteme, Multiprozessorsysteme, Cluster), verteilte und parallele Datenanalyse, Statistik-gestützte Optimierung von Analyseprozessen, map/reduce Techniken und ihre Verallgemeinerung zur verteilten Anfrageverarbeitung vorgestellt. Darüber hinaus werden Anwendungen in Systemen wie Hadoop und in NoSQL Systemen, die gesellschaftlichen Auswirkungen der Datenanalyse und die Bedeutung des Datenschutzes thematisiert.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "TUM",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "Datenbanken"
+      },
+      "semester": 3
+    },
+    {
+      "id": 405,
+      "typ": "Seminar",
+      "titel": "Seminar Datenbanken",
+      "kuerzel": "SemDB",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet der Datenbanken selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "Datenbanken"
+      },
+      "semester": 3
+    },
+
+    {
+      "id": 501,
       "typ": {
         "name": "Vorlesung",
         "minBelegteVeranstaltungen": 0
@@ -597,13 +757,13 @@
       "isPflicht": true,
       "isBlock": false,
       "modul": {
-        "id": 4,
+        "id": 5,
         "name": "HCI"
       },
       "semester": 2
     },
     {
-      "id": 402,
+      "id": 502,
       "typ": {
         "name": "Vorlesung",
         "minBelegteVeranstaltungen": 0
@@ -626,13 +786,13 @@
       "isPflicht": false,
       "isBlock": false,
       "modul": {
-        "id": 4,
+        "id": 5,
         "name": "HCI"
       },
       "semester": 3
     },
     {
-      "id": 403,
+      "id": 503,
       "typ": {
         "name": "Seminar",
         "minBelegteVeranstaltungen": 1
@@ -648,13 +808,13 @@
       "isPflicht": false,
       "isBlock": false,
       "modul": {
-        "id": 4,
+        "id": 5,
         "name": "HCI"
       },
       "semester": 3
     },
     {
-      "id": 404,
+      "id": 504,
       "typ": {
         "name": "Seminar",
         "minBelegteVeranstaltungen": 1
@@ -670,8 +830,185 @@
       "isPflicht": false,
       "isBlock": false,
       "modul": {
-        "id": 4,
+        "id": 5,
         "name": "HCI"
+      },
+      "semester": 3
+    },
+
+    {
+      "id": 601,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Erfolg im Team",
+      "kuerzel": "EiT",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen. Sie erarbeiten Impulse und Handlungsanleitungen, wie effektiv im Team zusammengearbeitet werden kann.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 1
+    },
+    {
+      "id": 602,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Präsentationstraining",
+      "kuerzel": "PT",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Theoretische Grundlagen zur Gestaltung von Präsentationen und zur Vorbereitung von Vorträgen, Praktische Erfahrungen durch die Anwendung der vorgestellten Techniken in eigenen Kurzvorträgen",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 1
+    },
+    {
+      "id": 603,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Schreibtraining",
+      "kuerzel": "SchrT",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Kenntnisse über des Verfassen verständlicher und am Leser orientierter Texte, Praktische Erfahrungen im zielgerichteten Überarbeiten und Verbessern von Texten",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 1
+    },
+    {
+      "id": 604,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Change-Prozesse in verschiedenen Arbeitskontexten",
+      "kuerzel": "CP-Ak",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Kenntnisse über Phasen eines Changeprozesses, Kenntnisse über unterschiedliche Ausrichtungen von Changevorhaben und deren Auswirkungen auf die Organisation, Changekompetenz als Erfolgsfaktor im Projektmanagement, Befähigung der Teilnehmer zur erfolgreichen Interaktion mit verschiedenen Abteilungen, Funktionslogiken und Wertesystemen, Collaborative Kompetenz im Umgang mit unterschiedlichen Arbeitswelten: z.B. Spezialisten, Verwaltungen & ablauforientierten Abteilungen (Operations), Verkaufs- / Vertriebs-Abteilungen, Forschungs- und Kreativ-Abteilungen.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 605,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Moderationstechniken",
+      "kuerzel": "ModT",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Sie haben Einblick in die Aufgaben eines Moderators, Sie können gängige Techniken für unterschiedliche Besprechungssituationen anwenden, Sie haben Erfahrung im Einsatz dieser Techniken durch praktische Erprobung in Rollenspielen",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 606,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Interkulturelle Kommunikation",
+      "kuerzel": "IntK",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: -Einblick in die Herausforderungen interkultureller Begegnungen; -Praktischen Erfahrung im Umgang mit kulturell bedingten Kommunikations- und Kooperationsproblemen",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 607,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Führungskompetenz",
+      "kuerzel": "Fk",
+      "lp": 3,
+      "beschreibung": "Nach dem Besuch der Lehrveranstaltung haben die Studierenden ein vertieftes Verständnis der Grundbausteine der Führung. Sie können ihren eigenen Führungsstil erkennen und entwickeln, sie haben Erfahrung in der Motivation anderer und Feedback zum Verhältnis von Selbstbild und Fremdbild.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 2
+    },
+    {
+      "id": 608,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Projektseminar Soziales Engagement",
+      "kuerzel": "PSE",
+      "lp": 2,
+      "beschreibung": "Die Studierenden übernehmen gesellschaftliche Verantwortung und setzen ihr Fachwissen ein, um mit einem Projekt oder Produkt einen Beitrag mit gesellschaftlicher Wirkung zu leisten.",
+      "schlagworte": ["Soziales Engagement"],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
       },
       "semester": 3
     },
@@ -719,160 +1056,6 @@
         "name": "Sonstiges"
       },
       "semester": 4
-    },
-    {
-      "id": 501,
-      "typ": {
-        "name": "Schlüsselqualifikation",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Erfolg im Team",
-      "kuerzel": "EiT",
-      "lp": 2,
-      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen. Sie erarbeiten Impulse und Handlungsanleitungen, wie effektiv im Team zusammengearbeitet werden kann.",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "n.a.",
-      "isPflicht": false,
-      "isBlock": true,
-      "modul": {
-        "id": 5,
-        "name": "Softskill-Kurse"
-      },
-      "semester": 1
-    },
-    {
-      "id": 502,
-      "typ": {
-        "name": "Schlüsselqualifikation",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Präsentationstraining",
-      "kuerzel": "PT",
-      "lp": 2,
-      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Theoretische Grundlagen zur Gestaltung von Präsentationen und zur Vorbereitung von Vorträgen, Praktische Erfahrungen durch die Anwendung der vorgestellten Techniken in eigenen Kurzvorträgen",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "n.a.",
-      "isPflicht": false,
-      "isBlock": true,
-      "modul": {
-        "id": 5,
-        "name": "Softskill-Kurse"
-      },
-      "semester": 1
-    },
-    {
-      "id": 503,
-      "typ": {
-        "name": "Schlüsselqualifikation",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Schreibtraining",
-      "kuerzel": "SchrT",
-      "lp": 2,
-      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Kenntnisse über des Verfassen verständlicher und am Leser orientierter Texte, Praktische Erfahrungen im zielgerichteten Überarbeiten und Verbessern von Texten",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "n.a.",
-      "isPflicht": false,
-      "isBlock": true,
-      "modul": {
-        "id": 5,
-        "name": "Softskill-Kurse"
-      },
-      "semester": 1
-    },
-    {
-      "id": 504,
-      "typ": {
-        "name": "Schlüsselqualifikation",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Change-Prozesse in verschiedenen Arbeitskontexten",
-      "kuerzel": "CP-Ak",
-      "lp": 2,
-      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Kenntnisse über Phasen eines Changeprozesses, Kenntnisse über unterschiedliche Ausrichtungen von Changevorhaben und deren Auswirkungen auf die Organisation, Changekompetenz als Erfolgsfaktor im Projektmanagement, Befähigung der Teilnehmer zur erfolgreichen Interaktion mit verschiedenen Abteilungen, Funktionslogiken und Wertesystemen, Collaborative Kompetenz im Umgang mit unterschiedlichen Arbeitswelten: z.B. Spezialisten, Verwaltungen & ablauforientierten Abteilungen (Operations), Verkaufs- / Vertriebs-Abteilungen, Forschungs- und Kreativ-Abteilungen.",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "n.a.",
-      "isPflicht": false,
-      "isBlock": true,
-      "modul": {
-        "id": 5,
-        "name": "Softskill-Kurse"
-      },
-      "semester": 3
-    },
-    {
-      "id": 505,
-      "typ": {
-        "name": "Schlüsselqualifikation",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Moderationstechniken",
-      "kuerzel": "ModT",
-      "lp": 2,
-      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Sie haben Einblick in die Aufgaben eines Moderators, Sie können gängige Techniken für unterschiedliche Besprechungssituationen anwenden, Sie haben Erfahrung im Einsatz dieser Techniken durch praktische Erprobung in Rollenspielen",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "n.a.",
-      "isPflicht": false,
-      "isBlock": true,
-      "modul": {
-        "id": 5,
-        "name": "Softskill-Kurse"
-      },
-      "semester": 3
-    },
-    {
-      "id": 506,
-      "typ": {
-        "name": "Schlüsselqualifikation",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Interkulturelle Kommunikation",
-      "kuerzel": "IntK",
-      "lp": 2,
-      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: -Einblick in die Herausforderungen interkultureller Begegnungen; -Praktischen Erfahrung im Umgang mit kulturell bedingten Kommunikations- und Kooperationsproblemen",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "n.a.",
-      "isPflicht": false,
-      "isBlock": true,
-      "modul": {
-        "id": 5,
-        "name": "Softskill-Kurse"
-      },
-      "semester": 3
-    },
-    {
-      "id": 507,
-      "typ": {
-        "name": "Schlüsselqualifikation",
-        "minBelegteVeranstaltungen": 0
-      },
-      "titel": "Führungskompetenz",
-      "kuerzel": "Fk",
-      "lp": 3,
-      "beschreibung": "Nach dem Besuch der Lehrveranstaltung haben die Studierenden ein vertieftes Verständnis der Grundbausteine der Führung. Sie können ihren eigenen Führungsstil erkennen und entwickeln, sie haben Erfahrung in der Motivation anderer und Feedback zum Verhältnis von Selbstbild und Fremdbild.",
-      "schlagworte": [],
-      "links": [],
-      "Prof": "n.a.",
-      "Uni": "n.a.",
-      "isPflicht": false,
-      "isBlock": false,
-      "modul": {
-        "id": 5,
-        "name": "Softskill-Kurse"
-      },
-      "semester": 2
     }
   ]
 }
