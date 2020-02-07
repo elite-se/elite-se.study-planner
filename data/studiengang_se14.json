@@ -39,6 +39,10 @@
       "minBelegteVeranstaltungen": 1
     },
     {
+      "name": "Schlüsselqualifikation",
+      "minBelegteVeranstaltungen": 0
+    },
+    {
       "name": "Praktikum",
       "minBelegteVeranstaltungen": 1
     },
@@ -724,7 +728,7 @@
       },
       "titel": "Erfolg im Team",
       "kuerzel": "EiT",
-      "lp":2,
+      "lp": 2,
       "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen. Sie erarbeiten Impulse und Handlungsanleitungen, wie effektiv im Team zusammengearbeitet werden kann.",
       "schlagworte": [],
       "links": [],
@@ -746,7 +750,7 @@
       },
       "titel": "Präsentationstraining",
       "kuerzel": "PT",
-      "lp":2,
+      "lp": 2,
       "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Theoretische Grundlagen zur Gestaltung von Präsentationen und zur Vorbereitung von Vorträgen, Praktische Erfahrungen durch die Anwendung der vorgestellten Techniken in eigenen Kurzvorträgen",
       "schlagworte": [],
       "links": [],
@@ -790,7 +794,7 @@
       },
       "titel": "Change-Prozesse in verschiedenen Arbeitskontexten",
       "kuerzel": "CP-Ak",
-      "lp":2,
+      "lp": 2,
       "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Kenntnisse über Phasen eines Changeprozesses, Kenntnisse über unterschiedliche Ausrichtungen von Changevorhaben und deren Auswirkungen auf die Organisation, Changekompetenz als Erfolgsfaktor im Projektmanagement, Befähigung der Teilnehmer zur erfolgreichen Interaktion mit verschiedenen Abteilungen, Funktionslogiken und Wertesystemen, Collaborative Kompetenz im Umgang mit unterschiedlichen Arbeitswelten: z.B. Spezialisten, Verwaltungen & ablauforientierten Abteilungen (Operations), Verkaufs- / Vertriebs-Abteilungen, Forschungs- und Kreativ-Abteilungen.",
       "schlagworte": [],
       "links": [],
@@ -812,7 +816,7 @@
       },
       "titel": "Moderationstechniken",
       "kuerzel": "ModT",
-      "lp":2,
+      "lp": 2,
       "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Sie haben Einblick in die Aufgaben eines Moderators, Sie können gängige Techniken für unterschiedliche Besprechungssituationen anwenden, Sie haben Erfahrung im Einsatz dieser Techniken durch praktische Erprobung in Rollenspielen",
       "schlagworte": [],
       "links": [],
