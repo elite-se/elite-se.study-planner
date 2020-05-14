@@ -1,6 +1,6 @@
 # SE Study Planner
 
-Kleine App, die uns SE-lern die Studienplanung ein wenig erleichtern soll. Im jetzigen Zustand sind die Studiengangsinformationen nur händisch in einem json file konfigurierbar.
+Kleine Web-App, die uns SE-lern die Studienplanung ein wenig erleichtern soll. Im jetzigen Zustand sind die Studiengangsinformationen nur händisch in einem json file konfigurierbar.
 
 > Disclaimer: Das Tool ist nach bestem Wissen und Gewissen erstellt, aber für Korrektheit der Ergebnisse kann nicht garantiert werden! Jegliche Belegungen, die man sich zusammenstellt, müssen im Zweifel mit der Prüfungsordnung und/oder dem Studiengangskoordinator abgesprochen werden!
 
@@ -74,5 +74,3 @@ Besonderheiten / Designentscheidungen:
 # Mithelfen
 
 Hilfe ist gerne gesehen :) Falls Du Lust hast eins der Features aus der Roadmap zu implementieren sag mir (Fabian) einfach Bescheid!
-
-Zur Zeit ist vor allem die Übertragung der Daten aller Veranstaltungen in das json-Format sehr aufwändig und wäre gut parallelisierbar => hierfür einfach kurz absprechen, damit Arbeit nicht doppelt gemacht wird und PR stellen :)
