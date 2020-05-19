@@ -12,14 +12,16 @@ import {
 export class NotificationsOverlayComponent implements OnInit {
   iconName: string;
   iconColorClass: string;
+  title: string;
   messsage: string;
 
-  visible: boolean = true;
+  visible: boolean = false;
 
   constructor(private notificationService: NotificationService) {}
 
   ngOnInit() {
     this.notificationService.notificationChanged.subscribe(() => {
+      this.title = this.notificationService.currentTitle;
       this.messsage = this.notificationService.currentNotification;
       switch (this.notificationService.currentLevel) {
         case NotificationLevel.ERROR:

@@ -17,26 +17,32 @@ export enum NotificationLevel {
 export class NotificationService {
   currentLevel: NotificationLevel;
   currentNotification: string;
+  currentTitle: string;
   @Output() notificationChanged: EventEmitter<any>;
 
   constructor() {
     this.notificationChanged = new EventEmitter<any>();
   }
 
-  postError(message: string) {
-    this.setNewMessage(message, NotificationLevel.ERROR);
+  postError(title: string, message: string) {
+    this.setNewMessage(title, message, NotificationLevel.ERROR);
   }
 
-  postWarning(message: string) {
-    this.setNewMessage(message, NotificationLevel.WARNING);
+  postWarning(title: string, message: string) {
+    this.setNewMessage(title, message, NotificationLevel.WARNING);
   }
 
-  postInfo(message: string) {
-    this.setNewMessage(message, NotificationLevel.INFO);
+  postInfo(title: string, message: string) {
+    this.setNewMessage(title, message, NotificationLevel.INFO);
   }
 
-  private setNewMessage(message: string, level: NotificationLevel) {
+  private setNewMessage(
+    title: string,
+    message: string,
+    level: NotificationLevel
+  ) {
     this.currentLevel = level;
+    this.currentTitle = title;
     this.currentNotification = message;
     this.notificationChanged.emit();
   }

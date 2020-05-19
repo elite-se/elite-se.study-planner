@@ -15,16 +15,21 @@
   .message-container {
     background: white;
     padding: 24px;
-    max-width: 85vw;
+    max-width: 50vw;
     border-radius: 12px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    h2 {
+      margin: 12px 0;
+    }
+
     p {
       margin-top: 12px;
-      font-size: 1.2rem;
+      font-weight: 300;
+      text-align: center;
     }
 
     .info {
