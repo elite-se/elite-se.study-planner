@@ -59,4 +59,15 @@ export class BelegungService {
   getCurrentBelegungAsIDList(): number[] {
     return this.belegteVeranstaltungen.map((v) => v.id);
   }
+
+  reloadBelegungFromIDList(ids: number[]) {
+    const isInBelegung = (v: Veranstaltung) => {
+      return ids.indexOf(v.id) >= 0;
+    };
+
+    this.belegteVeranstaltungen = this.studiengangService.allVeranstaltungen.filter(
+      (v: Veranstaltung) => isInBelegung(v)
+    );
+    this.belegteVeranstaltungenChange.emit();
+  }
 }
