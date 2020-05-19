@@ -12,6 +12,7 @@ import { ModulVeranstaltungenComponent } from "./components/modul-veranstaltunge
 import { RegelnDisplayComponent } from "./components/regeln-display/regeln-display.component";
 import { SaveBelegungComponent } from './components/save-belegung/save-belegung.component';
 import { UploadSavedBelegungComponent } from './components/upload-saved-belegung/upload-saved-belegung.component';
+import { NotificationsOverlayComponent } from './components/notifications-overlay/notifications-overlay.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UploadSavedBelegungComponent } from './components/upload-saved-belegung
     ModulVeranstaltungenComponent,
     RegelnDisplayComponent,
     SaveBelegungComponent,
-    UploadSavedBelegungComponent
+    UploadSavedBelegungComponent,
+    NotificationsOverlayComponent
   ],
   imports: [BrowserModule, HttpClientModule, AngularFontAwesomeModule],
   providers: [],
