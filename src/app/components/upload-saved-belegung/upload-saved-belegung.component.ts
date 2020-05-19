@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { getLocaleFirstDayOfWeek } from "@angular/common";
 import { BelegungService } from "src/app/services/belegung.service";
+import { NotificationService } from "src/app/services/notification.service";
 
 @Component({
   selector: "app-upload-saved-belegung",
@@ -10,7 +11,10 @@ import { BelegungService } from "src/app/services/belegung.service";
 export class UploadSavedBelegungComponent implements OnInit {
   private hiddenFileInput: any;
 
-  constructor(private belegungService: BelegungService) {}
+  constructor(
+    private belegungService: BelegungService,
+    private notificationService: NotificationService
+  ) {}
 
   ngOnInit() {
     this.hiddenFileInput = document.createElement("input");
@@ -21,22 +25,41 @@ export class UploadSavedBelegungComponent implements OnInit {
       console.log("Files changed", this.hiddenFileInput.files);
       if (this.hiddenFileInput.files.length > 0) {
         for (var i = 0; i < this.hiddenFileInput.files.length; i++) {
-          try {
-            let file = this.hiddenFileInput.files[i];
-            const reader = new FileReader();
-            reader.onload = () => {
-              let belegungsList = JSON.parse(reader.result as string);
+          let file = this.hiddenFileInput.files[i];
+          const reader = new FileReader();
+          reader.onload = () => {
+            let belegungsList;
+            try {
+              belegungsList = JSON.parse(reader.result as string);
+            } catch (error) {
+              this.notificationService.postError(
+                "Fehlerhafte Datei",
+                "Die hochgeladene Datei scheint keine gültige '.json' Datei zu sein! Stelle sicher, dass Du nur Dateien hochlädst, die Du vorher vom StudyPlanner runtergeladen hast."
+              );
+            }
 
-              //TODO: error checking!
+            if (!Array.isArray(belegungsList)) {
+              this.notificationService.postWarning(
+                "Fehlerhafter Dateiinhalt",
+                "Der Inhalt der hochgeladenen Datei entspricht nicht dem erwarteten Format. Es wird eine Liste von Veranstaltungs-IDs erwartet. Stelle sicher, dass Du nur Dateien hochlädst, die Du vorher vom StudyPlanner runtergeladen hast."
+              );
+            }
 
-              this.belegungService.reloadBelegungFromIDList(belegungsList);
+            if (belegungsList.length == 0) {
+              this.notificationService.postWarning(
+                "Keine Vorlesungen in Datei gefunden",
+                "Die hochgeladene Datei enthielt keine Vorlesungen. Die aktuelle Belegung wird beibehalten."
+              );
+            }
 
-              console.log("Belegung", belegungsList);
-            };
-            reader.readAsText(file);
-          } catch (error) {
-            console.log(error);
-          }
+            this.belegungService.reloadBelegungFromIDList(belegungsList);
+
+            this.notificationService.postInfo(
+              "Belegung erfolgreich geladen",
+              "Die Belegung wurde erfolgreich aus der hochgeladenen Datei geladen."
+            );
+          };
+          reader.readAsText(file);
         }
       }
     });
