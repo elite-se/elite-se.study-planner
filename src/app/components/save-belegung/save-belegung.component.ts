@@ -21,7 +21,6 @@ export class SaveBelegungComponent implements OnInit {
     a.download = this.generateFileName();
     a.click();
     URL.revokeObjectURL(a.href);
-    document.removeChild(a);
   }
 
   private generateFileName(): string {
