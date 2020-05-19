@@ -10,6 +10,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { ModulCssClassPipe } from "./pipes/modul-css-class.pipe";
 import { ModulVeranstaltungenComponent } from "./components/modul-veranstaltungen/modul-veranstaltungen.component";
 import { RegelnDisplayComponent } from "./components/regeln-display/regeln-display.component";
+import { SaveBelegungComponent } from './components/save-belegung/save-belegung.component';
+import { UploadSavedBelegungComponent } from './components/upload-saved-belegung/upload-saved-belegung.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { RegelnDisplayComponent } from "./components/regeln-display/regeln-displ
     VeranstaltungCardComponent,
     ModulCssClassPipe,
     ModulVeranstaltungenComponent,
-    RegelnDisplayComponent
+    RegelnDisplayComponent,
+    SaveBelegungComponent,
+    UploadSavedBelegungComponent
   ],
   imports: [BrowserModule, HttpClientModule, AngularFontAwesomeModule],
   providers: [],
