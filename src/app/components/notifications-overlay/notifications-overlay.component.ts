@@ -26,7 +26,7 @@ export class NotificationsOverlayComponent implements OnInit {
       switch (this.notificationService.currentLevel) {
         case NotificationLevel.ERROR:
           this.iconColorClass = "error";
-          this.iconName = "exclamation-triangle";
+          this.iconName = "bomb";
           break;
         case NotificationLevel.WARNING:
           this.iconColorClass = "warning";
