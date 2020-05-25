@@ -9,6 +9,13 @@ header {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.56);
   z-index: 999;
   position: fixed;
+
+  #title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 #main-container {

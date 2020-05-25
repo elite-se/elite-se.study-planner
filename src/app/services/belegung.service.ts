@@ -8,7 +8,7 @@ import { StudiengangService } from "./studiengang.service";
  */
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class BelegungService {
   @Output() belegteVeranstaltungenChange: EventEmitter<any>;
@@ -29,16 +29,23 @@ export class BelegungService {
   private loadPflichtVeranstaltungenFromStudiengang() {
     console.log("Beleging Pflichtveranstaltungen from studiengang.");
     this.belegteVeranstaltungen = this.studiengangService.allVeranstaltungen.filter(
-      v => {
+      (v) => {
         return v.isPflicht;
       }
     );
     this.belegteVeranstaltungenChange.emit();
   }
 
+  /**
+   * Adds a Veranstaltung to the Belegung. If it already is in the Belegung, nothing happens
+   * @param v
+   */
   addVeranstaltungToBelegung(v: Veranstaltung) {
-    this.belegteVeranstaltungen.push(v);
-    this.belegteVeranstaltungenChange.emit();
+    let idx = this.belegteVeranstaltungen.indexOf(v);
+    if (idx < 0) {
+      this.belegteVeranstaltungen.push(v);
+      this.belegteVeranstaltungenChange.emit();
+    }
   }
 
   removeVeranstaltungFromBelegung(v: Veranstaltung) {
@@ -47,5 +54,20 @@ export class BelegungService {
       this.belegteVeranstaltungen.splice(idx, 1);
       this.belegteVeranstaltungenChange.emit();
     }
+  }
+
+  getCurrentBelegungAsIDList(): number[] {
+    return this.belegteVeranstaltungen.map((v) => v.id);
+  }
+
+  reloadBelegungFromIDList(ids: number[]) {
+    const isInBelegung = (v: Veranstaltung) => {
+      return ids.indexOf(v.id) >= 0;
+    };
+
+    this.belegteVeranstaltungen = this.studiengangService.allVeranstaltungen.filter(
+      (v: Veranstaltung) => isInBelegung(v)
+    );
+    this.belegteVeranstaltungenChange.emit();
   }
 }

@@ -1,27 +1,24 @@
 <header>
+  <h3 id="title">SE Study Planner</h3>
   <div style="flex-grow: 1;"></div>
-  <h3>SE Study Planner</h3>
-  <div style="flex-grow: 1;"></div>
-  <fa name="bars" size="lg"></fa>
+  <app-upload-saved-belegung></app-upload-saved-belegung>
+  <div style="width: 12px"></div>
+  <app-save-belegung></app-save-belegung>
 </header>
 
 <div id="main-container">
   <div id="veranstaltungen">
     <h4 class="title">Module & Veranstaltungen</h4>
-    <app-modul-veranstaltungen
-      *ngFor="let m of module"
-      [modul]="m"
-    ></app-modul-veranstaltungen>
+    <app-modul-veranstaltungen *ngFor="let m of module" [modul]="m"></app-modul-veranstaltungen>
   </div>
 
   <div id="right">
     <div id="semesterplanung">
-      <app-semester-swim-lane
-        *ngFor="let semNr of semester"
-        [semesterNr]="semNr"
-      ></app-semester-swim-lane>
+      <app-semester-swim-lane *ngFor="let semNr of semester" [semesterNr]="semNr"></app-semester-swim-lane>
     </div>
 
     <app-regeln-display></app-regeln-display>
   </div>
 </div>
+
+<app-notifications-overlay></app-notifications-overlay>
