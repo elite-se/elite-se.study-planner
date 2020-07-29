@@ -3,6 +3,10 @@ import {
   RegelCheckerService,
   RegelForDisplay
 } from "src/app/services/regel-checker.service";
+import { BelegungService } from 'src/app/services/belegung.service';
+import { Veranstaltung, Modul } from 'src/app/datatypes/veranstaltung';
+import { calculateEinbringbareLPSum } from 'src/app/util/utils';
+import { StudiengangService } from 'src/app/services/studiengang.service';
 
 @Component({
   selector: "app-regeln-display",
@@ -14,16 +18,29 @@ export class RegelnDisplayComponent implements OnInit {
   passedRegelnCount: number = 0;
   allRegelnPassedFlag: boolean = false;
 
+  einbringbareLPCount: number = 0;
+  module: Modul[] = [];
+
   regelnHidden: boolean = true;
 
-  constructor(private regelCheckerService: RegelCheckerService) {}
+  constructor(private regelCheckerService: RegelCheckerService, private belegungService: BelegungService, private studienGangService: StudiengangService) { }
 
   ngOnInit() {
+    this.studienGangService.selectedStudiengangChange.subscribe(() => {
+      this.module = this.studienGangService.module;
+      this.updateEinbringbareLPCount();
+    })
+
     this.regelCheckerService.regelnChange.subscribe(() => {
       this.updateRegelDisplays();
     });
 
+    this.belegungService.belegteVeranstaltungenChange.subscribe(() => {
+      this.updateEinbringbareLPCount();
+    })
+
     this.updateRegelDisplays();
+    this.updateEinbringbareLPCount();
   }
 
   toggleRegelnHidden() {
@@ -34,5 +51,10 @@ export class RegelnDisplayComponent implements OnInit {
     this.regelnForDisplay = this.regelCheckerService.regelnForDisplay;
     this.passedRegelnCount = this.regelCheckerService.passedRegelnCount;
     this.allRegelnPassedFlag = this.regelCheckerService.allRegelnPassedFlag;
+  }
+
+  private updateEinbringbareLPCount(): void {
+    const belegung = this.belegungService.belegteVeranstaltungen;
+    this.einbringbareLPCount = calculateEinbringbareLPSum(belegung, this.module);
   }
 }

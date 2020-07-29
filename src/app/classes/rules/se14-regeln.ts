@@ -4,12 +4,13 @@ import {
   Modul,
   VeranstaltungsTyp
 } from "../../datatypes/veranstaltung";
+import { calculateEinbringbareLPSum } from 'src/app/util/utils';
 
 export class AllePflichtRegel implements Regel {
   mnemonicDescSuccess = "Alle Pflichtveranstaltungen sind eingeplant.";
   mnemonicDescFailure = "Es sind nicht alle Pflichtveranstaltungen eingeplant.";
 
-  constructor() {}
+  constructor() { }
 
   /**
    * Überprüft ob alle Pflichveranstaltungen in der Planung vorkommen.
@@ -40,14 +41,16 @@ export class AllePflichtRegel implements Regel {
 
 export class MinLPRegel implements Regel {
   minLP: number;
+  currentLP: number;
+  module: Modul[];
   mnemonicDescSuccess: string;
   mnemonicDescFailure: string;
 
-  constructor(minLP: number) {
+  constructor(minLP: number, module: Modul[]) {
     this.minLP = minLP;
-    this.mnemonicDescSuccess = "mind. " + this.minLP + " LP sind eingeplant.";
-    this.mnemonicDescFailure =
-      "Es sind zu wenig LP eingeplant (" + this.minLP + " benötigt).";
+    this.currentLP = 0;
+    this.module = module;
+    this.updateMnemonicDescs();
   }
 
   /**
@@ -57,13 +60,16 @@ export class MinLPRegel implements Regel {
     studiengangVeranstaltungen: Veranstaltung[],
     belegung: Veranstaltung[]
   ): boolean {
-    let lpBelegt = belegung.reduce(
-      (sum: number, veranstaltung: Veranstaltung) => {
-        return sum + veranstaltung.lp;
-      },
-      0
-    );
+    let lpBelegt = calculateEinbringbareLPSum(belegung, this.module);
+    this.currentLP = lpBelegt;
+    this.updateMnemonicDescs();
     return lpBelegt >= this.minLP;
+  }
+
+  updateMnemonicDescs(): void {
+    this.mnemonicDescSuccess = this.currentLP + " LP von " + this.minLP + " nötigen LP sind eingeplant.";
+    this.mnemonicDescFailure =
+      "Mit " + this.currentLP + " LP sind zu wenig einbringbare eingeplant (" + this.minLP + " benötigt).";
   }
 }
 
@@ -94,7 +100,7 @@ export class MinWahlpflichtLPInModulRegel implements Regel {
   }
 
   /**
-   * Überprüft ob genug Leistungspunkt in nicht-pflicht-Veranstaltungen eines Moduls eingplant sind.
+   * Überprüft ob genug Leistungspunkte in nicht-pflicht-Veranstaltungen eines Moduls eingeplant sind.
    */
   check(
     studiengangVeranstaltungen: Veranstaltung[],

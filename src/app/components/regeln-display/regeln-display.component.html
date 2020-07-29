@@ -1,26 +1,17 @@
 <div id="regeln-display">
-  <h4 class="regeln-header {{ allRegelnPassedFlag ? 'success' : 'error' }}">
-    {{ passedRegelnCount }}/{{ regelnForDisplay.length }} Anforderungen erfüllt
-    <fa
-      [name]="'angle-' + (regelnHidden ? 'up' : 'down')"
-      size="lg"
-      (click)="toggleRegelnHidden()"
-      class="down-btn"
-    ></fa>
-  </h4>
-  <div class="regeln-container {{ regelnHidden ? 'hidden' : '' }} ">
-    <div
-      *ngFor="let regel of regelnForDisplay"
-      class="regel {{ regel.state ? 'success' : 'error' }}"
-    >
-      <fa
-        class="icon"
-        [name]="regel.state ? 'check-circle' : 'exclamation-triangle'"
-        size="lg"
-      ></fa>
-      <p class="desc">
-        {{ regel.message }}
-      </p>
-    </div>
-  </div>
+	<h4 class="regeln-header {{ allRegelnPassedFlag ? 'success' : 'error' }}">
+		{{ passedRegelnCount }}/{{ regelnForDisplay.length }}
+		Anforderungen erfüllt ~~
+		{{ einbringbareLPCount }}
+		LP einbringbar
+		<fa [name]="'angle-' + (regelnHidden ? 'up' : 'down')" size="lg" (click)="toggleRegelnHidden()" class="down-btn"></fa>
+	</h4>
+	<div class="regeln-container {{ regelnHidden ? 'hidden' : '' }} ">
+		<div *ngFor="let regel of regelnForDisplay" class="regel {{ regel.state ? 'success' : 'error' }}">
+			<fa class="icon" [name]="regel.state ? 'check-circle' : 'exclamation-triangle'" size="lg"></fa>
+			<p class="desc">
+				{{ regel.message }}
+			</p>
+		</div>
+	</div>
 </div>
