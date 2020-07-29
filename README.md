@@ -54,7 +54,7 @@ Besonderheiten / Designentscheidungen:
 - [ ] Detailbeschreibungen der Veranstaltungen in Popup anzeigen
 - [ ] About Info Popup hinzufügen
 - [ ] Drag and Drop
-- [ ] Export der gewählten Belegung als json/Excel/CSV/...
+- [x] Export der gewählten Belegung als json/Excel/CSV/...
 - [ ] Upload & Import von Studiengangs- und Vorlesungsinformationen als json File(s)
 - [ ] "Auto-Belegung", die mit minimal vielen Veranstaltungen alle Regeln erfüllt
 - [ ] GUI zum erstellen/editieren von Studiengangsinfos
