@@ -29,7 +29,7 @@ export class StudiengangSE14 implements Studiengang {
     this.veranstaltungen = data.veranstaltungen;
     this.regeln = [];
     this.regeln.push(new AllePflichtRegel());
-    this.regeln.push(new MinLPRegel(this.minLP));
+    this.regeln.push(new MinLPRegel(this.minLP, this.module));
     for (let modul of this.module) {
       if (modul.minWahlLP > 0) {
         this.regeln.push(new MinWahlpflichtLPInModulRegel(modul));

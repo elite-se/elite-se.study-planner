@@ -31,7 +31,13 @@
     {
       "id": 6,
       "name": "Softskill-Kurse",
-      "minWahlLP": 10
+      "minWahlLP": 10,
+      "maxEinbringLP": 10
+    },
+    {
+      "id": 9,
+      "name": "Sonstiges",
+      "minWahlLP": 0
     }
   ],
   "veranstaltungstypen": [
@@ -218,7 +224,6 @@
       },
       "semester": 3
     },
-
     {
       "id": 201,
       "typ": {
@@ -518,7 +523,6 @@
       },
       "semester": 3
     },
-
     {
       "id": 301,
       "typ": {
@@ -614,7 +618,6 @@
       },
       "semester": 3
     },
-
     {
       "id": 401,
       "typ": {
@@ -727,7 +730,6 @@
       },
       "semester": 3
     },
-
     {
       "id": 501,
       "typ": {
@@ -835,7 +837,6 @@
       },
       "semester": 3
     },
-
     {
       "id": 601,
       "typ": {
@@ -1000,7 +1001,9 @@
       "kuerzel": "PSE",
       "lp": 2,
       "beschreibung": "Die Studierenden übernehmen gesellschaftliche Verantwortung und setzen ihr Fachwissen ein, um mit einem Projekt oder Produkt einen Beitrag mit gesellschaftlicher Wirkung zu leisten.",
-      "schlagworte": ["Soziales Engagement"],
+      "schlagworte": [
+        "Soziales Engagement"
+      ],
       "links": [],
       "Prof": "n.a.",
       "Uni": "n.a.",
@@ -1012,7 +1015,6 @@
       },
       "semester": 3
     },
-
     {
       "id": 901,
       "typ": {

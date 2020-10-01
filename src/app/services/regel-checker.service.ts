@@ -94,12 +94,6 @@ export class RegelCheckerService {
         : regelChecker.regel.mnemonicDescFailure;
 
       checkAccumulator = checkAccumulator && regelChecker.lastState;
-
-      if (!regelChecker.lastState) {
-        console.log("Check failed");
-      } else {
-        console.log("Check passed");
-      }
     }
     this.allRegelnPassedFlag = checkAccumulator;
     this.regelnChange.emit();

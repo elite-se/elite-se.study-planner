@@ -21,6 +21,7 @@ export interface Modul {
   id: number;
   name: string;
   minWahlLP: number;
+  maxEinbringLP?: number;
 }
 
 export interface VeranstaltungsTyp {
