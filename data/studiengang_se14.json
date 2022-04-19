@@ -596,7 +596,10 @@
     },
     {
       "id": 303,
-      "typ": "Seminar",
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
       "titel": "Seminar Verteilte Systeme",
       "kuerzel": "SemVS",
       "lp": 4,
