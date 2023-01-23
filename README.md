@@ -2,9 +2,9 @@
 
 Kleine Web-App, die uns SE-lern die Studienplanung ein wenig erleichtern soll. Im jetzigen Zustand sind die Studiengangsinformationen nur händisch in einem json file konfigurierbar.
 
-> Disclaimer: Das Tool ist nach bestem Wissen und Gewissen erstellt, aber für Korrektheit der Ergebnisse kann nicht garantiert werden! Jegliche Belegungen, die man sich zusammenstellt, müssen im Zweifel mit der Prüfungsordnung und/oder dem Studiengangskoordinator abgesprochen werden!
+[Deployment 1](https://elite-se-study-planner.onrender.com) und [Deployment 2](https://mathe.sexy/se-planner/)
 
-[Heroku Deployment](https://se-study-planner.herokuapp.com/) (keine Premium App. Start kann also etwas dauern, wenn sie länger als 30 Minuten nicht genutzt wurde)
+> Disclaimer: Das Tool ist nach bestem Wissen und Gewissen erstellt, aber für Korrektheit der Ergebnisse kann nicht garantiert werden! Jegliche Belegungen, die man sich zusammenstellt, müssen im Zweifel mit der Prüfungsordnung und/oder dem Studiengangskoordinator abgesprochen werden!
 
 ![aktueller Screenshot](./images/seStudyPlannerScreenshot.png)
 
@@ -14,6 +14,12 @@ Kleine Web-App, die uns SE-lern die Studienplanung ein wenig erleichtern soll. I
 - [Roadmap](#Roadmap)
 - [Lokales Setup](#Lokales-Setup)
 - [Mithelfen](#Mithelfen)
+
+# Deployments
+
+Ein [deployment](https://elite-se-study-planner.onrender.com) inkl. CI/CD läuft via [render.com](https://render.com/). Es ist als "WebService" eingerichtet, verwendet die Kommandos `build:prod` und `start` aus dem `package.json` und läuft über @FabianWildgrube's account. Pull Requests auf master werden automatisch separat deployed zum reviewen. Jeder push auf `master` löst ein neues Deploymnet zu der o.g. url aus. Deployments werden gescipped, falls `[skip deploy]` in der commit message enthalten ist.
+
+Ein [zweites deployment](https://mathe.sexy/se-planner/) ist netterweise von @esclear gehosted. Es ist ein statischer build des Repos (Stand Jan. 23rd 2023).
 
 # Architektur
 
