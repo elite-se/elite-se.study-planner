@@ -33,6 +33,11 @@
                 "glob": "favicon.ico",
                 "input": "src",
                 "output": "/"
+              },
+              {
+                "glob": "CNAME",
+                "input": ".",
+                "output": "/"
               }
             ],
             "styles": [
