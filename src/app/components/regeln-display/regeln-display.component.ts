@@ -7,11 +7,14 @@ import { BelegungService } from 'src/app/services/belegung.service';
 import { Veranstaltung, Modul } from 'src/app/datatypes/veranstaltung';
 import { calculateEinbringbareLPSum } from 'src/app/util/utils';
 import { StudiengangService } from 'src/app/services/studiengang.service';
+import { faAngleUp, faAngleDown, faCheckCircle, faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 @Component({
   selector: "app-regeln-display",
   templateUrl: "./regeln-display.component.html",
-  styleUrls: ["./regeln-display.component.scss"]
+  styleUrls: ["./regeln-display.component.scss"],
+  standalone: false
 })
 export class RegelnDisplayComponent implements OnInit {
   regelnForDisplay: RegelForDisplay[] = [];
@@ -22,6 +25,11 @@ export class RegelnDisplayComponent implements OnInit {
   module: Modul[] = [];
 
   regelnHidden: boolean = true;
+
+  faAngleUp = faAngleUp;
+  faAngleDown = faAngleDown;
+  faCheckCircle = faCheckCircle;
+  faExclamationTriangle = faExclamationTriangle;
 
   constructor(private regelCheckerService: RegelCheckerService, private belegungService: BelegungService, private studienGangService: StudiengangService) { }
 

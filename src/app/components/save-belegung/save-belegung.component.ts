@@ -1,12 +1,16 @@
 import { Component, OnInit } from "@angular/core";
 import { BelegungService } from "src/app/services/belegung.service";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-save-belegung",
   templateUrl: "./save-belegung.component.html",
   styleUrls: ["./save-belegung.component.scss"],
+  standalone: false,
 })
 export class SaveBelegungComponent implements OnInit {
+  faDownload = faDownload;
+
   constructor(private belegungService: BelegungService) {}
 
   ngOnInit() {}

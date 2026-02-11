@@ -1,4 +1,4 @@
-import { Injectable, Output, EventEmitter } from "@angular/core";
+import { Injectable, EventEmitter } from "@angular/core";
 import { StudiengangService } from "./studiengang.service";
 import { BelegungService } from "./belegung.service";
 import { Regel } from "../datatypes/studiegang";
@@ -37,7 +37,7 @@ export class RegelCheckerService {
     }).length;
   }
 
-  @Output() regelnChange: EventEmitter<any>;
+  regelnChange: EventEmitter<any>;
 
   constructor(
     private studiengangService: StudiengangService,

@@ -1,4 +1,4 @@
-import { Injectable, EventEmitter, Output } from "@angular/core";
+import { Injectable, EventEmitter } from "@angular/core";
 
 export enum NotificationLevel {
   ERROR,
@@ -18,7 +18,7 @@ export class NotificationService {
   currentLevel: NotificationLevel;
   currentNotification: string;
   currentTitle: string;
-  @Output() notificationChanged: EventEmitter<any>;
+  notificationChanged: EventEmitter<any>;
 
   constructor() {
     this.notificationChanged = new EventEmitter<any>();

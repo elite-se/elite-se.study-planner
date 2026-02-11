@@ -1,4 +1,4 @@
-import { Injectable, Output, EventEmitter } from "@angular/core";
+import { Injectable, EventEmitter } from "@angular/core";
 import { Studiengang, Regel, StudiengangData } from "../datatypes/studiegang";
 import { Veranstaltung, Modul } from "../datatypes/veranstaltung";
 import { BackendConnectionService } from "./backend-connection.service";
@@ -17,7 +17,7 @@ import { StudiengangSE14 } from "../classes/studiengangSE14";
 export class StudiengangService {
   private selectedStudiengang: Studiengang;
 
-  @Output() selectedStudiengangChange: EventEmitter<any>;
+  selectedStudiengangChange: EventEmitter<any>;
 
   constructor(private backendConnection: BackendConnectionService) {
     this.selectedStudiengangChange = new EventEmitter<any>();
