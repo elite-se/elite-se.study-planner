@@ -2,7 +2,7 @@
 
 Kleine Web-App, die uns SE-lern die Studienplanung ein wenig erleichtern soll. Im jetzigen Zustand sind die Studiengangsinformationen nur händisch in einem json file konfigurierbar.
 
-[Deployment 1](https://elite-se-study-planner.onrender.com) und [Deployment 2](https://mathe.sexy/se-planner/)
+[Deployment](https://studyplanner.elite-se.de/)
 
 > Disclaimer: Das Tool ist nach bestem Wissen und Gewissen erstellt, aber für Korrektheit der Ergebnisse kann nicht garantiert werden! Jegliche Belegungen, die man sich zusammenstellt, müssen im Zweifel mit der Prüfungsordnung und/oder dem Studiengangskoordinator abgesprochen werden!
 
