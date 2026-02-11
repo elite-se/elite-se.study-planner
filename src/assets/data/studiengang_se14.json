@@ -1,0 +1,1069 @@
+{
+  "name": "Elitestudiengang Master Software Engineering - 14. Jahrgang",
+  "semester": 4,
+  "minLP": 120,
+  "module": [
+    {
+      "id": 1,
+      "name": "Formale Methoden",
+      "minWahlLP": 6
+    },
+    {
+      "id": 2,
+      "name": "Software Engineering",
+      "minWahlLP": 6
+    },
+    {
+      "id": 3,
+      "name": "Verteilte Systeme",
+      "minWahlLP": 0
+    },
+    {
+      "id": 4,
+      "name": "Datenbanken",
+      "minWahlLP": 0
+    },
+    {
+      "id": 5,
+      "name": "HCI",
+      "minWahlLP": 0
+    },
+    {
+      "id": 6,
+      "name": "Softskill-Kurse",
+      "minWahlLP": 10,
+      "maxEinbringLP": 10
+    },
+    {
+      "id": 9,
+      "name": "Sonstiges",
+      "minWahlLP": 0
+    }
+  ],
+  "veranstaltungstypen": [
+    {
+      "name": "Vorlesung",
+      "minBelegteVeranstaltungen": 0
+    },
+    {
+      "name": "Seminar",
+      "minBelegteVeranstaltungen": 1
+    },
+    {
+      "name": "Schlüsselqualifikation",
+      "minBelegteVeranstaltungen": 0
+    },
+    {
+      "name": "Praktikum",
+      "minBelegteVeranstaltungen": 1
+    },
+    {
+      "name": "Masterarbeit",
+      "minBelegteVeranstaltungen": 1
+    }
+  ],
+  "veranstaltungen": [
+    {
+      "id": 101,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Formale Methoden",
+      "kuerzel": "FM",
+      "lp": 6,
+      "beschreibung": "Die Entwicklung beweisbar korrekter Software ist eines der wichtigsten Ziele des Software-Engineering. Für einen Korrektheitsnachweis sind einerseits die Anforderungen, gemäß deren sich die Software verhalten soll, formal zu spezifizieren und andererseits das Verhalten der Software in einem adäquaten semantischen Modell zu erfassen. Die Vorlesung legt die mathematischen Grundlagen für die Spezifikation und die Semantik von sequentiellen Programmen, stellt Beweismethoden und ihre Umsetzung in einem Theorembeweiser vor und gibt eine Einführung in die methodische Entwicklung korrekter sequentieller Programme.",
+      "schlagworte": [
+        "Aussagenlogik",
+        "Prädikatenlogik",
+        "Beweiskalküle",
+        "Induktion",
+        "algebraische Spezifikationen",
+        "operationale Semantik",
+        "Hoare-Logik",
+        "dynamische Logik",
+        "abstrakte Datentypen",
+        "Verfeinerung",
+        "Theorembeweiser"
+      ],
+      "links": [],
+      "Prof": "Alexander Knapp",
+      "Uni": "Uni Augsburg",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 1
+    },
+    {
+      "id": 102,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Modellierung, Spezifikation und Verifikation reaktiver Systeme",
+      "kuerzel": "MSV",
+      "lp": 6,
+      "beschreibung": "Reaktive Systeme verarbeiten Informationen unter Reaktion auf und in Interaktion mit einer Umgebung. Typische Vertreter sind Betriebssysteme und Software für Steuergeräte; häufig finden sich reaktive Systeme in sicherheitskritischen Bereichen, etwa medizinischen Anwendungen, Zahlungssystemen oder Zugangskontrollsystemen, in denen hohe Zuverlässigkeitsanforderungen gestellt werden. Die prägenden Eigenschaften reaktiver Systeme sind Nebenläufigkeit, Kommunikation und Nichtterminierung. Die Vorlesung stellt Ansätze zur Modellierung und Spezifikation reaktiver Systeme vor und gibt eine Einführung in Verfeinerungs- und Verifikationstechniken für zuverlässige, reaktive Systeme.",
+      "schlagworte": [
+        "Transitionssysteme",
+        "Sicherheits- und Lebendigkeitseigenschaften",
+        "strombasierte Spezifikationen",
+        "nebenläufige Termersetzungssysteme (z. B. Maude)",
+        "Prozeßalgebren (z. B. Calculus of Communicating Systems, Communicating Sequential Processes, pi-Kalkül)",
+        "Simulation und Bisimulation",
+        "Temporallogik",
+        "symbolisches Model checking",
+        "automatenbasiertes Model checking",
+        "Abstraktion",
+        "Verfeinerung"
+      ],
+      "links": [],
+      "Prof": "Alexander Knapp",
+      "Uni": "Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 2
+    },
+    {
+      "id": 103,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Modellbasierte Sicherheitsanalyse",
+      "kuerzel": "MSA",
+      "lp": 6,
+      "beschreibung": "Am 26 April 1986 wurde offensichtlich, wie kritisch eingebettete Systeme sein können. An diesem Tag kam es im Block 4 des Kernkraftwerks Tschernobyl zu einer unkontrollierten Kernschmelze. Folgen davon waren Tausende Tote, mehrere Hundert Quadratkilometer kontaminierten Bodens und radioaktiver Fallout in einem Großteil von Zentraleuropa. Das Ziel dieser Lehrveranstaltung ist es, in den State-of-the-art bei Sicherheitsanalysetechniken einzuführen. Diese Techniken zielen auf die Analyse sicherheitskritischer Systeme und liefern Designrichtlinien, um Systeme sicherer zu machen. Der Hauptfokus der Lehrveranstaltung liegt auf der ständig wachsenden Bedeutung von Software in kritischen, eingebetteten Systemen. Nur das korrekte Zusammenspiel zwischen der Hardware, der Steuerungssoftware und den Umgebungsbedingungen garantiert Sicherheit. Die Lehrveranstaltung gibt eine Einführung in traditionelle Ansätze in der Sicherheitsanalyse, ebenso wie in Leading-Edge-Techniken, die auf formalen Methoden basieren. Ebenfalls behandelt werden die Grundlagen von quantitativen und probabilistischen Bewertungsmethoden und die Notwendigkeiten einer Zertifizierung.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Wolfgang Reif",
+      "Uni": "Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 2
+    },
+    {
+      "id": 104,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Praktische IT-Sicherheit",
+      "kuerzel": "ITSEC",
+      "lp": 3,
+      "beschreibung": "Diese Vorlesung gibt eine Einführung in grundlegende Konzepte, Techniken, Methoden und Anwendungen der IT-Sicherheit. Die Vorlesung behandelt dabei folgende Themen: Die wichtigsten Bedrohungen und Angriffe, Grundbegriffe der IT-Sicherheit und Ziele der Disziplin wie Integrität, Vertraulichkeit, Verfügbarkeit und Authentizität. onzepte der Kryptographie sowie ausgewählte kryptographische Verschlüsselungs-, Signier- und Hashverfahren. Zugriffskontrollsysteme, das heißt, Mechanismen um den Zugriff auf sensible Daten zu überwachen und zu kontrollieren. onzepte und Verfahren der Authentifikation (d.h. der Überprüfung einer behaupteten Identität). Dabei werden insbesondere Herausforderungen der aktuellen biometrischen Technologien diskutiert. Techniken (TLS, IPSEC) und Technologien (VPN, Firewalls) der Netzwerksicherheit. Security Engineering, das heißt, die systematische Vorgehensweise zur Konstruktion sicherer IT-Systeme, sowie dabei eingesetzte Methoden, werden vorgestellt. Darüber hinaus werden die dabei zu berücksichtigen rechtliche Aspekte angesprochen.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 3
+    },
+    {
+      "id": 105,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Semantik von Programmiersprachen",
+      "kuerzel": "SvP",
+      "lp": 5,
+      "beschreibung": "Es werden drei klassische Ansätze zur Semantik von Programmiersprachen besprochen: In der operationalen Semantik wird die Bedeutung eines programmiersprachlichen Konstrukts dadurch festgelegt, wie es auszuführen ist und zu welchen Effekten es führt. In der denotationellen Semantik wird von der spezifischen Ausführungsart abstrahiert und lediglich der Effekt eines Konstrukts betrachtet. Schließlich wird im axiomatischen Ansatz der Effekt eines Konstrukts durch Zusicherungen spezifiziert. Als Beispielsprache für die unterschiedlichen semantischen Ansätze dient eine einfache, imperative WHILE-Sprache, die im Verlauf der Vorlesung um syntaktische Konstrukte erweitert wird.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Alexander Knapp",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 3
+    },
+    {
+      "id": 106,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Formale Methoden und IT-Sicherheit",
+      "kuerzel": "SemFM",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet Formale Methoden und IT-Sicherheit selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 1,
+        "name": "Formale Methoden"
+      },
+      "semester": 3
+    },
+    {
+      "id": 201,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Software Engineering",
+      "kuerzel": "SE",
+      "lp": 6,
+      "beschreibung": "Die Vorlesung gibt einen Überblick über Methoden zur systematischen Entwicklung von Software. Ausgehend von einer Diskussion des Softwarelebenszyklus behandelt die Vorlesung insbesondere die Phasen der Softwareentwicklung: Analyse, Spezifikation, Design, Implementierung, Wartung. Diese spiegeln sich in den behandelten Softwareprozessen wieder, von denen der Unified Process den größten Raum einnimmt. In Analyse und Design sind Modularisierung, Abstraktion und Objekt-Orientierung wesentliche Themen, ebenso wie der Einsatz der UML. Ein weiteres wichtiges Thema sind Design Patterns. Aus der Implementierungsphase wird insbesondere die Qualitätssicherung durch Testen und Reviews thematisiert.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Wolfgang Reif",
+      "Uni": "Uni Augsburg",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 1
+    },
+    {
+      "id": 202,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Projektmanagement",
+      "kuerzel": "PM",
+      "lp": 6,
+      "beschreibung": "Der Erfolg eines Softwareentwicklungsprojekts hängt wesentlich von der Güte des Projektmanagements ab. Wesentliche Ziele des Projektmanagements bestehen darin, die Produktivität zu erhöhen, die Qualität sicherzustellen und vorgegebene Kosten- und Zeitrahmen einzuhalten. In dieser Vorlesung werden die wesentlichen Aufgaben, Prozesse, Methoden und Werkzeuge des Projektmanagement vorgestellt und an praktischen Beispielen eingeübt.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Martin Wirsing",
+      "Uni": "LMU",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 1
+    },
+    {
+      "id": 203,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Testen",
+      "kuerzel": "TEST",
+      "lp": 5,
+      "beschreibung": "Testen dient der Bewertung und Verbesserung der Produktqualität durch die Identifikation von Mängeln und Problemen. Der Softwaretest konzentriert sich dabei auf die dynamische Überprüfung des Softwareverhaltens gegenüber einem erwarteten Verhalten basierend auf einer endlichen Menge von Testfällen, die geeignet aus dem im allgemeinen unendlichen Ablaufraum der Software auszuwählen sind. Die Vorlesung stellt die Grundlagen des Softwaretests vor, erläutert die Einbindung des Softwaretests in den Softwareentwicklungsprozeß und beschreibt und diskutiert Testmethoden und -werkzeuge sowie Verfahren des Testmanagements.",
+      "schlagworte": [
+        "Software-Qualität",
+        "Testprozeß",
+        "funktionales Testen",
+        "strukturelles Testen",
+        "diversifizierendes Testen",
+        "modellbasiertes Testen",
+        "Testen eingebetteter Software (Konformanztesten)",
+        "Testen objektorientierter Software",
+        "Integrationstest",
+        "Testausführung"
+      ],
+      "links": [],
+      "Prof": "Alexander Knapp",
+      "Uni": "LMU",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 2
+    },
+    {
+      "id": 204,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Requirements Engineering",
+      "kuerzel": "RE",
+      "lp": 6,
+      "beschreibung": "Requirements Engineering (RE) ist eine entscheidende Aufgabe/Phase jedes Entwicklungsprojektes. Hierbei zu erarbeitende Anforderungs- und Systemspezifikationen sind Grundlage für die weitere Entwicklung, Integration und Abnahme des zu entwickelnden Systems. Sie bilden die Abstimmungs- und Vertragsgrundlage für alle Projektbeteiligten (Kunden, Nutzer, Entwickler u.a.) und sind Ausgangspunkt für Aufwandschätzung und Planung des Projektes. Die Vorlesung beginnt mit einer Einführung in die Ziele, Aufgaben und Inhalte des Requirements Engineering. Nach einem Überblick über Anforderungsarten, wesentliche Prozessschritte, Methoden und Techniken der Anforderungsentwicklung und Spezifikation werden folgende Themen des RE vertiefend behandelt: Anforderungserhebung und ihre strukturierte Dokumentation, Use Case/Szenario-Modellierung, Nicht-funktionale Anforderungen, Requirements Management, Systemmodelle in RE und Nutzerschnittstellen. Diese Themen und ihre RE-Techniken werden anhand von Fallstudien aus Forschung und industrieller Praxis vermittelt und in praktischen Übungen vertiefend bearbeitet.",
+      "schlagworte": [
+        "Software-Qualität",
+        "Testprozeß",
+        "funktionales Testen",
+        "strukturelles Testen",
+        "diversifizierendes Testen",
+        "modellbasiertes Testen",
+        "Testen eingebetteter Software (Konformanztesten)",
+        "Testen objektorientierter Software",
+        "Integrationstest",
+        "Testausführung"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 2
+    },
+    {
+      "id": 205,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Modellbasierte Softwareentwicklung",
+      "kuerzel": "MSE",
+      "lp": 5,
+      "beschreibung": "Die modellgetriebene Softwareentwicklung setzt sich das Ziel, Softwaresysteme möglichst weitgehend durch (semi-)formale Modelle zu beschreiben und aus diesen Modellen möglichst viele Artefakte von Softwaresystemen generativ ableiten zu können. In diese Vorgehensweise reihen sich der 'Model-Driven Architecture'-Ansatz der OMG, der 'Software Factory'-Ansatz von Microsoft, Modellinterpreter wie die 'Executable UML' und genereller die Verwendung von 'Domain-Specific Languages' und das generative Programmieren ein. Die Vorlesung gibt einen Überblick über das Gebiet der modellgetriebenen Softwareentwicklung anhand der Themenschwerpunkte: Modellierung, Metamodellierung, Transformationen und Codegenerierung.",
+      "schlagworte": [
+        "Modellgetriebene Entwicklungsansätze (z. B. Model-Driven Architecture)",
+        "Modellierungssprachen (z. B. Unified Modeling Language, Object Constraint Language)",
+        "Metamodellierung (z. B. Meta-Object Facility, Eclipse Modeling Framework)",
+        "Modellaustausch (z. B. XML Metadata Interchange)",
+        "Model-to-Model- und Model-to-Text-Transformationen (z. B. Query/View/Transformation, Graphtransformationen, Java Emitter Templates, xPand)",
+        "Modelltransformationswerkzeuge (z. B. openArchitectureWare, AndroMDA)"
+      ],
+      "links": [],
+      "Prof": "Alexander Knapp",
+      "Uni": "Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 2
+    },
+    {
+      "id": 206,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Software Engineering für Embedded Systems",
+      "kuerzel": "SE-ES",
+      "lp": 6,
+      "beschreibung": "Eingebettete Systeme sind für einen spezifischen Zweck in einer technischen Umgebung entworfene, eingebaute und betriebene informationsverarbeitende Systeme, wie sie etwa in Automobilen, Flugzeugen, Haushaltsgeräten, Unterhaltungselektronik oder Mobilfunkgeräten zu finden sind. Prägende Merkmale sind die Umgebungskommunikation durch Sensoren und Aktuatoren und Realzeitabhängigkeiten. Die Vorlesung gibt einen Überblick in den Entwurf, die Implementierung und das technische Umfeld eingebetteter Systeme.",
+      "schlagworte": [
+        "synchrone und asynchrone Modellierung",
+        "Spezifikationssprachen (z. B. Statecharts, Esterel, VHDL, SystemC, Giotto)",
+        "gezeitete Automaten",
+        "hybride Automaten",
+        "eingebettete Hardware",
+        "Sensoren",
+        "Aktuatoren",
+        "Application-Specific Circuits",
+        "eingebettete Betriebssysteme",
+        "Scheduling",
+        "Middleware",
+        "Hardware/Software Co-Design"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+    {
+      "id": 207,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Künstliche Intelligenz",
+      "kuerzel": "KI",
+      "lp": 5,
+      "beschreibung": "Die Vorlesung grenzt zunächst die (klassische) künstliche Intelligenz von Verfahren des maschinellen Lernens ab und erläutert ihre Rolle in industriellen Anwendungen (Industrie 4.0, Smart Factory, Smart Grids). Es wird auf unterschiedliche Methoden und Modelle wie Entscheidungsbäume und wälder, Ensemble-Methoden, Regression, numerische, kontinuierliche Optimierung (Gradientenverfahren, SGD, ADAM) auch unter Nebenbedingungen, probabilistische Modelle, Gauss-Prozesse, aktives Lernen, neuronale Netze, Faltungsnetze (CNN) und rekurrente neuronale Netze eingegangen. Darüber hinaus werden Themen des Natural Language Processing bzw. Verarbeitung von diskreten Daten diskutiert.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+    {
+      "id": 208,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Projektseminar (PuLi)",
+      "kuerzel": "PULI",
+      "lp": 4,
+      "beschreibung": "Jeder Studierende des Elitestudiengangs sollte während seines Studiums an einem Spezialprojekt („Pushing-the-limits-Projekt“) teilnehmen. Beispiele für solche Projekte der bisherigen Jahrgänge sind XENAKIS (http://xenakis.3-n.de/), Sightplayer, Monopedia und CATS. Die Projekte gehen dabei immer auf studentische Initiativen und Ideen zurück. Es gibt damit für die Studierenden die Möglichkeit ein interessantes und herausforderndes Projekt in Form einer Lehrveranstaltung zu bearbeiten. Die Spezialprojekte beginnen im 2. Semester (Ideenfindung und Konzeption) und dauern bis in das 3. Semester. Die Pushing-the-limits-Projekte werden als Seminare abgerechnet, womit auch der Forderung der Prüfungsordnung genüge getan ist, genau ein Seminar zu absolvieren.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+    {
+      "id": 209,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Softwaretechnik",
+      "kuerzel": "SemST",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet des Software Engineering selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+    {
+      "id": 210,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Automotive Software Engineering",
+      "kuerzel": "SemASE",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet des Automotive Software Engineering selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+    {
+      "id": 211,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Grundlagen des Software und Systems Engineering",
+      "kuerzel": "SemSSE",
+      "lp": 4,
+      "beschreibung": "Nach dem Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien auf dem Gebiet des Software und Systems Engineering selbstständig zu erarbeiten und bezogen auf ein spezielles wissenschaftlich anspruchsvolles Thema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz neuer Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 2,
+        "name": "Software Engineering"
+      },
+      "semester": 3
+    },
+    {
+      "id": 301,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Verteilte Systeme",
+      "kuerzel": "VS",
+      "lp": 6,
+      "beschreibung": "Inhalte dieser Veranstaltung sind grundlegende Begriffe und Techniken der Entwicklung verteilter Systeme.",
+      "schlagworte": [
+        "Networks",
+        "Protocol and Services",
+        "Interprocess Communication",
+        "Processes and Threads",
+        "Synchronization",
+        "Coordination",
+        "SOA",
+        "Web Service",
+        "REST",
+        "Web Service Composition"
+      ],
+      "links": [],
+      "Prof": "Bernhard Bauer",
+      "Uni": "Uni Augsburg",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Verteilte Systeme"
+      },
+      "semester": 2
+    },
+    {
+      "id": 302,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Software Engineering für Verteilte Systeme",
+      "kuerzel": "SE-VS",
+      "lp": 6,
+      "beschreibung": "Diese Veranstaltung beschäftigt sich mit Softwarearchitekturen verteilter System, mit semantischen Techniken und mit Multi-Agenten-Systemen. Nach der erfolgreichen Teilnahme an der Lehrveranstaltung haben die Studierenden ein vertieftes Verständnis für Service-orientierte Architekturen, Softwarearchitekturen und semantische Technologien und sind in der Lage, solche Technologien zu verstehen, zu bewerten und können diese auf anwendungsspezifische Probleme in Projekten übertragen. Sie können damit Lösungen und Architekturen für komplexe Softwaresysteme entwickeln und die fachlichen Lösungskonzepte kritisch evaluieren.",
+      "schlagworte": [
+        "Design of Software Architectures",
+        "Documentation of Architectures",
+        "Evaluation of Architectures",
+        "Semantic Technologies",
+        "Semantic Web",
+        "Ontology Languages",
+        "Description Logics",
+        "Reasoning with OWL",
+        "Description Logic Reasoning",
+        "Advanced Reasoning Techniques",
+        "Multi-Agent Systems",
+        "Intelligent Agents",
+        "Agent architectures",
+        "Reactive and hybrid agents",
+        "Interaction in Multi-Agent systems"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Verteilte Systeme"
+      },
+      "semester": 3
+    },
+    {
+      "id": 303,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Verteilte Systeme",
+      "kuerzel": "SemVS",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet der Verteilten Systeme selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Verteilte Systeme"
+      },
+      "semester": 3
+    },
+    {
+      "id": 401,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Datenbanksysteme",
+      "kuerzel": "DBS1",
+      "lp": 6,
+      "beschreibung": "Die Vorlesung vermittelt Kenntnisse die zum Entwurf und Betrieb von Datenbanksystemen benötigt werden. Behandelt wird das relationale Datenmodell das modernen Datenbanken zu Grunde liegt, Modellierung- und Entwurfstechniken für das Datenbankdesign und relationale Anfragesprachen, sowie deren Grundlage, die relationale Algebra. Außerdem behandelt wird die Anbindung von Datenbanken an moderne Programmiersprachen wie JAVA und Datenbankerweiterungen welche die Verarbeitung von XML Daten oder objektorientierte Datenmodelle unterstützen. Weiterer Inhalt der Vorlesung sind die Technologien, die bei der Implementierung von Datenbanksystemen eingesetzt werden, z.B. zur Anfragebearbeitung, Transaktionsverwaltung, Mehrbenutzersynchronisation, Fehlerbehandlung, etc.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Alfons Kemper",
+      "Uni": "TUM",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 3,
+        "name": "Datenbanken"
+      },
+      "semester": 1
+    },
+    {
+      "id": 402,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Datenbanksysteme und moderne CPU-Architekturen",
+      "kuerzel": "DB-IMPL",
+      "lp": 6,
+      "beschreibung": "Understand the interaction between database systems resp. algorithms and modern computer architecture (esp. CPU, Cache, Primary Storage) and learn how to develop resp. to modify the internals of database systems in order to make use of the properties of these computer architecture features.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Thomas Neumann",
+      "Uni": "TUM",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "Datenbanken"
+      },
+      "semester": 2
+    },
+    {
+      "id": 403,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Web-Datenbanken",
+      "kuerzel": "Web-DBS",
+      "lp": 5,
+      "beschreibung": "In vielen aktuellen Einsatzgebieten sind Datenbanken über Web-basierte Schnittstellen für Benutzer zugänglich, sei es beim Einkauf bei einem Internethändler, bei der Kundenbetreuung, beim Online-Banking, etc. Die große Zahl an gleichzeitigen Benutzern und die Verteilung der Anwendungen auf mehrere verschiedene Hard- und Softwaresysteme wie Web-Server, Datenbank-Server, Application-Server, etc haben zur Entwicklung spezieller Softwarearchitekturen und Entwicklungsparadigmen geführt. Die Vorlesung behandelt aktuelle Programmiersprachen, Technologien und Architekturen für moderne Web-basierte Informationssysteme. Diese Veranstaltung soll neben den theoretischen Grundlagen auch praktische Erfahrung beim Umgang mit den relevanten Technologien vermitteln. Aufgabe der Studenten ist deshalb neben dem Erlernen der theoretischen Grundlagen auch der Entwurf und die Implementierung einer modernen Web-basierten Datenbankanwendung.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "TUM",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "Datenbanken"
+      },
+      "semester": 3
+    },
+    {
+      "id": 404,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Grundlagen Data Engineering",
+      "kuerzel": "DE",
+      "lp": 6,
+      "beschreibung": "Die Veranstaltung behandelt grundlegende Techniken zur Organisation und effizienten Analyse (sehr) großer Datenmengen. Dazu werden Verfahren der verteilten Datenhaltung in Abhängigkeit von der Systemarchitektur (z.B. Mehrkernsysteme, Multiprozessorsysteme, Cluster), verteilte und parallele Datenanalyse, Statistik-gestützte Optimierung von Analyseprozessen, map/reduce Techniken und ihre Verallgemeinerung zur verteilten Anfrageverarbeitung vorgestellt. Darüber hinaus werden Anwendungen in Systemen wie Hadoop und in NoSQL Systemen, die gesellschaftlichen Auswirkungen der Datenanalyse und die Bedeutung des Datenschutzes thematisiert.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "TUM",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "Datenbanken"
+      },
+      "semester": 3
+    },
+    {
+      "id": 405,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Datenbanken",
+      "kuerzel": "SemDB",
+      "lp": 4,
+      "beschreibung": "Nach dem erfolgreichen Besuch des Seminars sind die Studierenden in der Lage, weiterführende Problemstellungen, Konzepte, Methoden, Verfahren, Techniken und Technologien aus dem Gebiet der Datenbanken selbstständig zu erarbeiten, zu analysieren und bezogen auf das individuelle Seminarthema aus dem genannten Gebiet zu bewerten. Sie verfügen über die wissenschaftliche Methodik, Kommunikationsfähigkeit und Fähigkeit zum Einsatz entsprechender Medien, um ein spezielles Thema in Wort und Schrift klar und verständlich zu präsentieren und wissenschaftlich anspruchsvolle Themenstellungen aus dem genannten Gebiet kritisch und argumentativ zu diskutieren und zu bewerten. Außerdem können sie die logischen Strukturen des Denkens und Argumentierens erkennen und zielführend einsetzen. Die Teilnehmenden können klar und verständlich formulieren und Fachinhalte frei vortragen. Sie verstehen es, einen Vortrag klar und nachvollziehbar zu strukturieren und auch bei komplexen Inhalten den Vortrag auf wesentliche Botschaften auszurichten und diese verständlich zu vermitteln. Argumentationsketten und Lösungsstrategien bei Störungen wenden sie gekonnt an. Die Studierenden verstehen es, präsent aufzutreten und souverän mit gängigen Präsentationsmedien umzugehen und diese interaktiv einzusetzen. Sie schaffen es, einen Vortrag auf eine bestimmte Zielgruppe auszurichten und den Zuhörer auch bei längeren Vortragsdauern zu motivieren und verschiedene Moderationstechniken anzuwenden.",
+      "schlagworte": [
+        "Literaturrecherche",
+        "Wissenschaftliche Methodik",
+        "Zeitmanagement",
+        "Kommunikationsfähigkeit"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 4,
+        "name": "Datenbanken"
+      },
+      "semester": 3
+    },
+    {
+      "id": 501,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Human-Computer-Interaction",
+      "kuerzel": "HCI",
+      "lp": 6,
+      "beschreibung": "Die Entwicklung multipler Medien zur Informationsdarbietung und zur Gestaltung der Mensch-Maschine-Schnittstelle hat in nur wenigen Jahren den Umgang mit Computern grundlegend verändert und wesentlich dazu beigetragen, Computertechnologie einer breiten Benutzerschicht zugänglich zu machen. In der Vorlesung werden zunächst die theoretischen Grundlagen moderner Interaktionsparadigmen vorgestellt bevor auf spezifische Verfahren zur Erkennung und Interpretation von Benutzereingaben sowie zur Generierung und Synchronisation von Systemausgaben eingegangen wird. Die hohe Komplexität der verwendeten Ein- und Ausgabemodalitäten erfordert zudem die Berücksichtigung spezifischer Usabilityrichtlinien beim Entwurf interaktiver Systeme, die im weiteren Verlauf der Vorlesung eingeführt werden.",
+      "schlagworte": [
+        "Interaktionsmodalitäten und -techniken",
+        "Medienspezifischen Analyse (Sprache, Gestik, Mimik etc)",
+        "Fusionsmodelle für vielkanalige Sensorsysteme (visuelle, auditive, haptische und biophysiologische Sensoren)",
+        "Medienspezifische Generierung (Sprache, Animationen etc.)",
+        "Kontextsensitive Auswahl von Medien",
+        "Medienkoordination und –synchronisation",
+        "Multimedialer Zugang zu Informationssystemen und zum WWW",
+        "Multimodale Dialogsysteme",
+        "Benutzer- und Diskursmodellierung",
+        "Agentenbasierte Multimediale Interaktion",
+        "Benutzungsschnittstellen der nächsten Generation (Perzeptive Interfaces, Emotionale Interfaces, Mensch-Roboter Interaktion etc.)"
+      ],
+      "links": [],
+      "Prof": "Elisabeth André",
+      "Uni": "Uni Augsburg",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 5,
+        "name": "HCI"
+      },
+      "semester": 2
+    },
+    {
+      "id": 502,
+      "typ": {
+        "name": "Vorlesung",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Usability Engineering",
+      "kuerzel": "UE",
+      "lp": 6,
+      "beschreibung": "Durch die zunehmende Verbreitung von Computern in allen Lebensreichen und deren Einbettung in die natürliche Umgebung des Benutzers wird die Gestaltung der Mensch-Maschine Interaktion zu einer großen Herausforderung. Ziel der Veranstaltung ist es grundlegende Techniken zum Entwurf von Benutzungsoberflächen zu vermitteln. Während bislang rein technische Aspekte dominierten, geht der Trend hin zu Entwurfsprozessen, die den Nutzer in den Vordergrund stellen und ihn bereits in der Entwurfsphase miteinbeziehen.Behandelt werden folgende Themen: Entwurfsprinzipien und Normen; Menschliche Informations-, Handlungs- und Wahrnehmungsprozesse; Benutzerzentrierter Entwicklungsprozess; Evaluierung von interaktiven Systemen. Zu Beginn der Veranstaltung werden Grundlagen des Usability Engineering erarbeitet. Die erlernten Techniken werden dann anhand eines konkreten Projekts umgesetzt, wobei alle Phasen eines benutzerzentrierten Entwicklungsprozesses zumindest ansatzweise durchlaufen werden. In Gruppen soll eine Applikation analysiert, entworfen, implementiert und evaluiert werden.",
+      "schlagworte": [
+        "Interaktionstechniken und –stile",
+        "Kognitive Grundlagen (Menschliche Informations-, Wahrnehmungs- und Handlungsprozesse) und deren Anwendung auf den Entwurf interaktiver Systeme",
+        "Entwurfsprinzipien und Normen",
+        "Vorgehensweisen und Methoden zum Entwurf interaktiver Systeme (z.B. Prototyping, partizipative Systemgestaltung)",
+        "Befragungs- und Beobachtungstechniken, Evaluierung von interaktiven Systemen (Formale Evaluierung, Heuristische Evaluierung, Empirische Evaluierung)",
+        "Analyse und Interpretation von empirischen Daten"
+      ],
+      "links": [],
+      "Prof": "Elisabeth André",
+      "Uni": "Uni Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 5,
+        "name": "HCI"
+      },
+      "semester": 3
+    },
+    {
+      "id": 503,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Human-Computer-Interaction",
+      "kuerzel": "SemHCI",
+      "lp": 4,
+      "beschreibung": "",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Elisabeth André",
+      "Uni": "Uni Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 5,
+        "name": "HCI"
+      },
+      "semester": 3
+    },
+    {
+      "id": 504,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Seminar Maschinelles Lernen und innovative Interaktionstechniken",
+      "kuerzel": "SemKI",
+      "lp": 4,
+      "beschreibung": "",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Elisabeth André",
+      "Uni": "Uni Augsburg",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 5,
+        "name": "HCI"
+      },
+      "semester": 3
+    },
+    {
+      "id": 601,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Erfolg im Team",
+      "kuerzel": "EiT",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen. Sie erarbeiten Impulse und Handlungsanleitungen, wie effektiv im Team zusammengearbeitet werden kann.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 1
+    },
+    {
+      "id": 602,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Präsentationstraining",
+      "kuerzel": "PT",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Theoretische Grundlagen zur Gestaltung von Präsentationen und zur Vorbereitung von Vorträgen, Praktische Erfahrungen durch die Anwendung der vorgestellten Techniken in eigenen Kurzvorträgen",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 1
+    },
+    {
+      "id": 603,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Schreibtraining",
+      "kuerzel": "SchrT",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Kenntnisse über des Verfassen verständlicher und am Leser orientierter Texte, Praktische Erfahrungen im zielgerichteten Überarbeiten und Verbessern von Texten",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 1
+    },
+    {
+      "id": 604,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Change-Prozesse in verschiedenen Arbeitskontexten",
+      "kuerzel": "CP-Ak",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Kenntnisse über Phasen eines Changeprozesses, Kenntnisse über unterschiedliche Ausrichtungen von Changevorhaben und deren Auswirkungen auf die Organisation, Changekompetenz als Erfolgsfaktor im Projektmanagement, Befähigung der Teilnehmer zur erfolgreichen Interaktion mit verschiedenen Abteilungen, Funktionslogiken und Wertesystemen, Collaborative Kompetenz im Umgang mit unterschiedlichen Arbeitswelten: z.B. Spezialisten, Verwaltungen & ablauforientierten Abteilungen (Operations), Verkaufs- / Vertriebs-Abteilungen, Forschungs- und Kreativ-Abteilungen.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 605,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Moderationstechniken",
+      "kuerzel": "ModT",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: Sie haben Einblick in die Aufgaben eines Moderators, Sie können gängige Techniken für unterschiedliche Besprechungssituationen anwenden, Sie haben Erfahrung im Einsatz dieser Techniken durch praktische Erprobung in Rollenspielen",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 606,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Interkulturelle Kommunikation",
+      "kuerzel": "IntK",
+      "lp": 2,
+      "beschreibung": "Studierende erlangen in diesem Modul vertiefte überfachliche Kompetenzen: -Einblick in die Herausforderungen interkultureller Begegnungen; -Praktischen Erfahrung im Umgang mit kulturell bedingten Kommunikations- und Kooperationsproblemen",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": true,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 607,
+      "typ": {
+        "name": "Schlüsselqualifikation",
+        "minBelegteVeranstaltungen": 0
+      },
+      "titel": "Führungskompetenz",
+      "kuerzel": "Fk",
+      "lp": 3,
+      "beschreibung": "Nach dem Besuch der Lehrveranstaltung haben die Studierenden ein vertieftes Verständnis der Grundbausteine der Führung. Sie können ihren eigenen Führungsstil erkennen und entwickeln, sie haben Erfahrung in der Motivation anderer und Feedback zum Verhältnis von Selbstbild und Fremdbild.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 2
+    },
+    {
+      "id": 608,
+      "typ": {
+        "name": "Seminar",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Projektseminar Soziales Engagement",
+      "kuerzel": "PSE",
+      "lp": 2,
+      "beschreibung": "Die Studierenden übernehmen gesellschaftliche Verantwortung und setzen ihr Fachwissen ein, um mit einem Projekt oder Produkt einen Beitrag mit gesellschaftlicher Wirkung zu leisten.",
+      "schlagworte": [
+        "Soziales Engagement"
+      ],
+      "links": [],
+      "Prof": "n.a.",
+      "Uni": "n.a.",
+      "isPflicht": false,
+      "isBlock": false,
+      "modul": {
+        "id": 6,
+        "name": "Softskill-Kurse"
+      },
+      "semester": 3
+    },
+    {
+      "id": 901,
+      "typ": {
+        "name": "Praktikum",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Industriepraktikum",
+      "kuerzel": "IP",
+      "lp": 10,
+      "beschreibung": "Der Studiengang verlangt die Ableistung eines Industriepraktikums von mindestens 8 Wochen Dauer (Vollzeit). Das Industriepraktikum sollte bei einem der Industriepartner des Studiengangs absolviert werden, wofür die Partnerunternehmen geeignete Angebote machen. Das Praktikum zählt 10 LP. Vorbereitung und Anmeldung: Mit der Planung des Praktikums, das in der vorlesungsfreien Zeit zwischen zweitem und drittem Semester stattfindet, sollte zu Beginn des zweiten Semesters begonnen werden. Alle Studierenden erhalten vom Koordinator des Studiengangs Informationen zu den Praktikumsangeboten der Partnerunternehmen. Die Bewerbung für die Praktikumsplätze und die Auswahl der Praktikanten durch die Firmenpartner erfolgt im Sommersemester. Praktika müssen mit dem Studiengang abgestimmt werden und mit den Leitlinien konform sein. Insbesondere sollten die Praktika zum Vorlesungsbeginn des Wintersemesters beendet sein.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Unternehmen nach Wahl",
+      "Uni": "--",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 9,
+        "name": "Sonstiges"
+      },
+      "semester": 2
+    },
+    {
+      "id": 902,
+      "typ": {
+        "name": "Masterarbeit",
+        "minBelegteVeranstaltungen": 1
+      },
+      "titel": "Masterarbeit",
+      "kuerzel": "MSC",
+      "lp": 30,
+      "beschreibung": "Die Masterarbeit wird im Allgemeinen im vierten Semester erstellt und sie ist mit 30 LP bewertet. Die Masterarbeit kann an einem der beteiligten Lehrstühle oder bei einem Firmenpartner des Elitestudiengangs erstellt werden. Die Erstellung der Masterarbeit bietet die Möglichkeit zu einem Auslandsaufenthalt. Vorbereitung und Anmeldung: Zur Vorbereitung der Masterarbeit sollte bis spätestens Mitte des dritten Semesters Kontakt mit dem Koordinator des Studiengangs hergestellt werden, damit mit der Vorbereitung begonnen werden kann. Für einen Auslandsaufenthalt in Japan im Rahmen der Kooperation des Elitestudiengangs mit dem National Institute of Informatics (NII) in Tokio ist eine Bewerbung bereits im 2. Semester (Sommersemester) erforderlich. Bei Interesse wenden Sie sich frühzeitig im 2. Semester an den Koordinator.",
+      "schlagworte": [],
+      "links": [],
+      "Prof": "Prof. nach Wahl",
+      "Uni": "nach Wahl",
+      "isPflicht": true,
+      "isBlock": false,
+      "modul": {
+        "id": 9,
+        "name": "Sonstiges"
+      },
+      "semester": 4
+    }
+  ]
+}
