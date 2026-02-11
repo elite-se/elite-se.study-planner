@@ -10,7 +10,8 @@ import { BelegungService } from "src/app/services/belegung.service";
 @Component({
   selector: "app-modul-veranstaltungen",
   templateUrl: "./modul-veranstaltungen.component.html",
-  styleUrls: ["./modul-veranstaltungen.component.scss"]
+  styleUrls: ["./modul-veranstaltungen.component.scss"],
+  standalone: false
 })
 export class ModulVeranstaltungenComponent implements OnInit {
   _modul: Modul;

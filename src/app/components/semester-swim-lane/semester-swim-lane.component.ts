@@ -10,7 +10,8 @@ import { BelegungService } from "src/app/services/belegung.service";
 @Component({
   selector: "app-semester-swim-lane",
   templateUrl: "./semester-swim-lane.component.html",
-  styleUrls: ["./semester-swim-lane.component.scss"]
+  styleUrls: ["./semester-swim-lane.component.scss"],
+  standalone: false
 })
 export class SemesterSwimLaneComponent implements OnInit {
   _semesterNr: number = 0;

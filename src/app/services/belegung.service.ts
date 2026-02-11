@@ -1,4 +1,4 @@
-import { Injectable, Output, EventEmitter } from "@angular/core";
+import { Injectable, EventEmitter } from "@angular/core";
 import { Veranstaltung } from "../datatypes/veranstaltung";
 import { StudiengangService } from "./studiengang.service";
 
@@ -11,7 +11,7 @@ import { StudiengangService } from "./studiengang.service";
   providedIn: "root",
 })
 export class BelegungService {
-  @Output() belegteVeranstaltungenChange: EventEmitter<any>;
+  belegteVeranstaltungenChange: EventEmitter<any>;
   public belegteVeranstaltungen: Veranstaltung[] = [];
 
   constructor(private studiengangService: StudiengangService) {

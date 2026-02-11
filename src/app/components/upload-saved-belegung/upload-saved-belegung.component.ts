@@ -1,15 +1,17 @@
 import { Component, OnInit } from "@angular/core";
-import { getLocaleFirstDayOfWeek } from "@angular/common";
 import { BelegungService } from "src/app/services/belegung.service";
 import { NotificationService } from "src/app/services/notification.service";
+import { faUpload } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-upload-saved-belegung",
   templateUrl: "./upload-saved-belegung.component.html",
   styleUrls: ["./upload-saved-belegung.component.scss"],
+  standalone: false,
 })
 export class UploadSavedBelegungComponent implements OnInit {
   private hiddenFileInput: any;
+  faUpload = faUpload;
 
   constructor(
     private belegungService: BelegungService,

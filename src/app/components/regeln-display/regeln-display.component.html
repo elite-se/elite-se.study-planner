@@ -4,11 +4,11 @@
 		Anforderungen erfüllt ~~
 		{{ einbringbareLPCount }}
 		LP einbringbar
-		<fa [name]="'angle-' + (regelnHidden ? 'up' : 'down')" size="lg" (click)="toggleRegelnHidden()" class="down-btn"></fa>
+		<fa-icon [icon]="regelnHidden ? faAngleUp : faAngleDown" size="lg" (click)="toggleRegelnHidden()" class="down-btn"></fa-icon>
 	</h4>
 	<div class="regeln-container {{ regelnHidden ? 'hidden' : '' }} ">
 		<div *ngFor="let regel of regelnForDisplay" class="regel {{ regel.state ? 'success' : 'error' }}">
-			<fa class="icon" [name]="regel.state ? 'check-circle' : 'exclamation-triangle'" size="lg"></fa>
+			<fa-icon class="icon" [icon]="regel.state ? faCheckCircle : faExclamationTriangle" size="lg"></fa-icon>
 			<p class="desc">
 				{{ regel.message }}
 			</p>

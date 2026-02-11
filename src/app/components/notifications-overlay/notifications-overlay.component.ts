@@ -3,14 +3,17 @@ import {
   NotificationService,
   NotificationLevel,
 } from "src/app/services/notification.service";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { faBomb, faExclamationCircle, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-notifications-overlay",
   templateUrl: "./notifications-overlay.component.html",
   styleUrls: ["./notifications-overlay.component.scss"],
+  standalone: false,
 })
 export class NotificationsOverlayComponent implements OnInit {
-  iconName: string;
+  icon: IconDefinition;
   iconColorClass: string;
   title: string;
   messsage: string;
@@ -26,15 +29,15 @@ export class NotificationsOverlayComponent implements OnInit {
       switch (this.notificationService.currentLevel) {
         case NotificationLevel.ERROR:
           this.iconColorClass = "error";
-          this.iconName = "bomb";
+          this.icon = faBomb;
           break;
         case NotificationLevel.WARNING:
           this.iconColorClass = "warning";
-          this.iconName = "exclamation-circle";
+          this.icon = faExclamationCircle;
           break;
         case NotificationLevel.INFO:
           this.iconColorClass = "info";
-          this.iconName = "info-circle";
+          this.icon = faInfoCircle;
           break;
       }
       this.visible = true;
@@ -44,6 +47,6 @@ export class NotificationsOverlayComponent implements OnInit {
   close() {
     this.visible = false;
     this.messsage = null;
-    this.iconName = null;
+    this.icon = null;
   }
 }
