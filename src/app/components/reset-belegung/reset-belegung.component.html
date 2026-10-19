@@ -1,0 +1,16 @@
+<div class="reset" (click)="openConfirmModal()">
+    <p>Reset Belegung</p>
+    <fa-icon [icon]="faRotateLeft" size="lg"></fa-icon>
+</div>
+
+<div class="confirm-modal-overlay" *ngIf="showConfirmModal" (click)="closeConfirmModal()">
+    <div class="confirm-modal" (click)="$event.stopPropagation()">
+        <fa-icon [icon]="faRotateLeft" size="3x" class="modal-icon"></fa-icon>
+        <h2>Belegung zurücksetzen?</h2>
+        <p>Möchtest Du die Belegung wirklich auf den Anfangszustand zurücksetzen? Alle zusätzlich gewählten Vorlesungen werden dabei entfernt.</p>
+        <div class="modal-actions">
+            <button class="btn btn-cancel" type="button" (click)="closeConfirmModal()">Abbrechen</button>
+            <button class="btn btn-confirm" type="button" (click)="confirmReset()">Zurücksetzen</button>
+        </div>
+    </div>
+</div>
