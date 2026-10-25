@@ -12,6 +12,7 @@ import { ModulVeranstaltungenComponent } from "./components/modul-veranstaltunge
 import { RegelnDisplayComponent } from "./components/regeln-display/regeln-display.component";
 import { SaveBelegungComponent } from './components/save-belegung/save-belegung.component';
 import { UploadSavedBelegungComponent } from './components/upload-saved-belegung/upload-saved-belegung.component';
+import { ResetBelegungComponent } from './components/reset-belegung/reset-belegung.component';
 import { NotificationsOverlayComponent } from './components/notifications-overlay/notifications-overlay.component';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { NotificationsOverlayComponent } from './components/notifications-overla
     RegelnDisplayComponent,
     SaveBelegungComponent,
     UploadSavedBelegungComponent,
+    ResetBelegungComponent,
     NotificationsOverlayComponent
   ],
   imports: [BrowserModule, FontAwesomeModule],
